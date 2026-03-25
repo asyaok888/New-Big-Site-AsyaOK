@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-apple-black: #1d1d1f;
+  --color-apple-gray: #86868b;
+  --color-apple-bg: #fbfbfd;
+}
+
+@keyframes carousel-stepped {
+  0%, 16% { transform: translateX(0); }
+  20%, 36% { transform: translateX(calc(-1 * (var(--card-w) + 25px) * 1)); }
+  40%, 56% { transform: translateX(calc(-1 * (var(--card-w) + 25px) * 2)); }
+  60%, 76% { transform: translateX(calc(-1 * (var(--card-w) + 25px) * 3)); }
+  80%, 96% { transform: translateX(calc(-1 * (var(--card-w) + 25px) * 4)); }
+  100% { transform: translateX(calc(-1 * (var(--card-w) + 25px) * 5)); }
+}
+
+.animate-carousel-stepped {
+  --card-w: calc(100vw - 48px);
+  animation: carousel-stepped 25s ease-in-out infinite;
+}
+
+@media (min-width: 1149px) {
+  .animate-carousel-stepped {
+    --card-w: 562px;
+  }
+}
+
+.carousel-card {
+  width: calc(100vw - 48px);
+  aspect-ratio: 562 / 291;
+  flex-shrink: 0;
+  height: auto;
+}
+
+@media (min-width: 1149px) {
+  .carousel-card {
+    width: 562px;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-apple-bg);
+    color: var(--color-apple-black);
+  }
+  
+  body {
+    @apply antialiased;
+  }
+}
+
+/* Custom utility for Apple-style blur */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes heroImageEnter {
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.animate-hero-image {
+  animation: heroImageEnter 1.5s ease-out forwards;
+}

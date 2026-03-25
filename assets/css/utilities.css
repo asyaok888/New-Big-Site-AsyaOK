@@ -1,0 +1,17 @@
+.text-micro {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.text-serif {
+    font-family: var(--font-serif);
+}
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+.hidden {
+    display: none !important;
+}

@@ -1,0 +1,16 @@
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-black);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s, opacity 0.2s;
+}
+h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+}

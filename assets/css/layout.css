@@ -1,0 +1,13 @@
+.container {
+    max-width: 1152px; /* 6xl */
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.section {
+    padding: 48px 0;
+}
+@media (min-width: 768px) {
+    .section {
+        padding: 128px 0;
+    }
+}
