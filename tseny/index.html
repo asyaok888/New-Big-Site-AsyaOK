@@ -154,36 +154,81 @@
         </section>
 
         <!-- Финальный CTA -->
-        <section class="py-20 md:py-32 text-center bg-white">
-            <div class="max-w-2xl mx-auto px-6 fade-in">
-                <h2 class="font-serif text-4xl md:text-5xl mb-6 font-normal">Начнем?</h2>
-                <p class="text-[#86868b] mb-10 font-light leading-relaxed text-lg">
+        <section class="section bg-white" style="text-align: center; padding-top: 64px; padding-bottom: 64px;">
+            <div class="container fade-in" style="max-width: 42rem;">
+                <h2 class="section-title" style="margin-bottom: 40px; font-size: 3rem;">Начнем?</h2>
+                <p style="color: var(--color-gray); margin-bottom: 40px; font-weight: 300; line-height: 1.625;">
                     Если вам важна не просто цифра, а ощущение, что вы выбираете подходящий формат без лишней путаницы, напишите мне. Я помогу сориентироваться.
                 </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <div class="cta-container" style="display: flex; flex-direction: column; align-items: center; gap: 24px;">
                     <a href="https://t.me/AsyaOk888?text=Здравствуйте,%20Ася!%20Я%20с%20вашего%20сайта,%20хочу%20уточнить%20стоимость%20и%20формат." 
                        target="_blank" 
                        onclick="ym(107145180, 'reachGoal', 'tg_click');" 
-                       class="inline-flex items-center justify-center bg-[#1d1d1f] text-white px-10 py-5 md:w-[320px] h-16 rounded-full font-bold text-xs tracking-[0.15em] uppercase transition-opacity hover:opacity-90">
+                       class="cta-btn" style="height: 64px; display: flex; align-items: center; justify-content: center; padding: 0 20px; white-space: nowrap;">
                         Telegram
                     </a>
                     <a href="https://max.ru/u/f9LHodD0cOIuUk0wJU63_uVTV3DvLiPDlcaCDqar8aNBHLe8t3W2jpSe8jA" 
                        target="_blank" 
                        onclick="ym(107145180, 'reachGoal', 'max_click');" 
-                       class="inline-flex items-center justify-center bg-[#1d1d1f] text-white px-10 py-5 md:w-[320px] h-16 rounded-full font-bold text-xs tracking-[0.15em] uppercase transition-opacity hover:opacity-90">
+                       class="cta-btn" style="height: 64px; display: flex; align-items: center; justify-content: center; padding: 0 20px; white-space: nowrap;">
                         MAX
                     </a>
                     <a href="https://vk.com/asyaok" 
                        target="_blank" 
                        onclick="ym(107145180, 'reachGoal', 'vk_click');" 
-                       class="inline-flex items-center justify-center bg-[#1d1d1f] text-white px-10 py-5 md:w-[320px] h-16 rounded-full font-bold text-xs tracking-[0.15em] uppercase transition-opacity hover:opacity-90">
+                       class="cta-btn" style="height: 64px; display: flex; align-items: center; justify-content: center; padding: 0 20px; white-space: nowrap;">
                         Вконтакте
                     </a>
                 </div>
+                <style>
+                    @media (min-width: 768px) {
+                        .cta-btn { width: 320px !important; }
+                        .cta-container { flex-direction: row !important; justify-content: center !important; }
+                    }
+                </style>
             </div>
         </section>
     </main>
 
     <site-footer></site-footer>
+
+    <style>
+        /* Cookie notice responsive styles */
+        @media (min-width: 640px) {
+            #cookie-notice {
+                flex-direction: row !important;
+                justify-content: center !important;
+            }
+            #cookie-notice span {
+                margin-bottom: 0 !important;
+                margin-right: 15px;
+            }
+        }
+    </style>
+    <div id="cookie-notice" style="display: none; position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(30, 30, 30, 0.95); color: #fff; padding: 15px 20px; text-align: center; z-index: 9999; font-size: 14px; font-family: sans-serif; box-sizing: border-box; flex-direction: column; align-items: center;">
+        <span style="margin-bottom: 10px;">
+            Мы используем файлы cookie и Яндекс Метрику для анализа трафика и улучшения работы сайта. Оставаясь с нами, вы соглашаетесь с 
+            <a href="policy.html" target="_blank" style="color: #fff; text-decoration: underline;">Политикой конфиденциальности</a>.
+        </span>
+        <button onclick="acceptCookies()" style="padding: 8px 20px; background: #fff; color: #000; border: none; border-radius: 9999px; cursor: pointer; font-weight: bold; font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; transition: 0.2s;">Принять</button>
+    </div>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+       (function(m,e,t,r,i,k,a){ m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a) })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107145180', 'ym');
+
+       ym(107145180, 'init', {
+            ssr:true,
+            webvisor:true,
+            clickmap:true,
+            ecommerce:"dataLayer",
+            referrer: document.referrer,
+            url: location.href,
+            accurateTrackBounce:true,
+            trackLinks:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/107145180" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </body>
 </html>
