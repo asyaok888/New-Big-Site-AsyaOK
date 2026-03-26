@@ -1,0 +1,24 @@
+h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+}
+
+.text-micro {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.text-serif {
+    font-family: var(--font-serif);
+}
+
+.link-underline {
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.link-underline:hover {
+    color: var(--color-black);
+}

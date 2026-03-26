@@ -9,173 +9,267 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/index.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/sections.css">
+    
+    <!-- JS -->
+    <script src="/js/main.js" defer></script>
 </head>
-<body class="bg-[#fbfbfd] text-[#1d1d1f] font-sans antialiased pt-16">
+<body>
+    <!-- Navigation -->
+    <nav class="glass">
+        <div class="nav-inner">
+            <a href="/" class="logo">
+                Кинолог<br>Ася Окорочкова
+            </a>
 
-    <site-header></site-header>
+            <!-- Desktop Menu -->
+            <div class="desktop-menu">
+                <a href="/#philosophy">Философия</a>
+                <a href="/#experience">Опыт</a>
+                <a href="/#reviews">Отзывы</a>
+                <a href="/#services">Услуги</a>
+                <a href="/#podcast">Подкаст</a>
+                <a href="/#personal">Личное</a>
+            </div>
 
-    <main>
-        <!-- Блок 1. Первый экран -->
-        <section class="py-20 md:py-32 pt-32 md:pt-40">
-            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Mobile Contact Button -->
+            <div class="mobile-contact-btn">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-sm">
+                    Связаться
+                </a>
+            </div>
+
+            <!-- Desktop Contact Button -->
+            <div class="desktop-contact-btn">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-lg">
+                    Связаться
+                </a>
+            </div>
+
+            <!-- Burger Button -->
+            <button id="menuToggle" class="burger-btn" aria-label="Открыть меню">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+            <a href="/#philosophy" class="mobile-link">Философия</a>
+            <a href="/#experience" class="mobile-link">Опыт</a>
+            <a href="/#reviews" class="mobile-link">Отзывы</a>
+            <a href="/#services" class="mobile-link">Услуги</a>
+            <a href="/#podcast" class="mobile-link">Подкаст</a>
+            <a href="/#personal" class="mobile-link">Личное</a>
+            <div style="margin-top: 24px;">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-lg" style="width: 100%;">
+                    Связаться
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 64px;">
+        <!-- Hero Section -->
+        <section class="section">
+            <div class="container split-section fade-in">
                 <div>
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-[#86868b] mb-6 inline-block">Кинолог в Москве</span>
-                    <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 font-normal leading-tight">Кинолог в Москве: помощь с поведением, воспитанием и жизнью с собакой</h1>
-                    <p class="text-lg font-medium mb-6 leading-relaxed">Очные занятия в Москве, район Лефортово, и онлайн-консультации. Работаю со щенками, бытовыми трудностями, сложным поведением, базовым послушанием и подготовкой к нормативам.</p>
-                    <p class="text-[#86868b] mb-8">Когда в жизни с собакой становится больше напряжения, чем понятности, важно не искать универсальные советы, а разбирать ситуацию целиком. Одним семьям нужна помощь на старте со щенком, другим — поддержка в момент, когда прогулки стали тяжёлыми, дома сложно расслабиться, а контакт с собакой будто теряется. На занятиях мы не «ломаем» поведение, а выстраиваем более понятную и устойчивую систему жизни для собаки и человека.</p>
-                    <a href="https://t.me/AsyaOk888" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-[#1d1d1f] text-white px-7 py-3.5 rounded-full no-underline font-medium text-[15px] transition-all duration-300 hover:opacity-85 hover:scale-[0.98]">Записаться на консультацию</a>
+                    <span class="section-tag">Кинолог в Москве</span>
+                    <h1 class="hero-title" style="font-size: 3rem; text-align: left; margin-bottom: 24px;">Кинолог в Москве: помощь с поведением, воспитанием и жизнью с собакой</h1>
+                    <p style="font-size: 1.125rem; font-weight: 500; margin-bottom: 24px; text-align: left; max-width: none;">Очные занятия в Москве, район Лефортово, и онлайн-консультации. Работаю со щенками, бытовыми трудностями, сложным поведением, базовым послушанием и подготовкой к нормативам.</p>
+                    <p style="text-align: left; max-width: none; margin-bottom: 32px;">Когда в жизни с собакой становится больше напряжения, чем понятности, важно не искать универсальные советы, а разбирать ситуацию целиком. Одним семьям нужна помощь на старте со щенком, другим — поддержка в момент, когда прогулки стали тяжёлыми, дома сложно расслабиться, а контакт с собакой будто теряется. На занятиях мы не «ломаем» поведение, а выстраиваем более понятную и устойчивую систему жизни для собаки и человека.</p>
+                    <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="cta-btn">Записаться на консультацию</a>
                 </div>
-                <div>
-                    <img src="/images/asya-hero.jpg" alt="Кинолог Ася Окорочкова с собакой" class="w-full rounded-[32px] object-cover aspect-[4/3] shadow-2xl">
+                <div class="desktop-image">
+                    <img src="/images/asya-hero.jpg" alt="Кинолог Ася Окорочкова с собакой">
                 </div>
             </div>
         </section>
 
-        <!-- Блок 2 и 3. Кому подходит и Запросы -->
-        <section class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white border border-[#f5f5f4] rounded-[32px] p-8 shadow-sm flex flex-col h-full transition-transform duration-500 hover:-translate-y-1">
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-[#86868b] mb-6 inline-block">Для кого</span>
-                    <h2 class="font-serif text-3xl md:text-4xl mb-6 font-normal leading-tight">Кому подходит помощь</h2>
-                    <p class="text-[#86868b] text-sm mb-6">Кинолог может быть полезен не только тогда, когда ситуация уже стала сложной. Часто люди обращаются раньше — чтобы спокойно пройти щенячий возраст, избежать бытовых ошибок, выстроить понятные правила дома и на прогулке, подготовить собаку к жизни в городе или разобраться, почему привычные советы не работают именно в их случае.</p>
-                    <div class="h-px w-8 bg-current opacity-20 mb-6"></div>
-                    <ul class="list-none p-0 grow space-y-3">
-                        <li class="relative pl-5 text-sm text-[#86868b] leading-relaxed before:content-['•'] before:absolute before:left-0 before:opacity-50">владельцам щенков, которым важно спокойно пройти первые месяцы</li>
-                        <li class="relative pl-5 text-sm text-[#86868b] leading-relaxed before:content-['•'] before:absolute before:left-0 before:opacity-50">тем, кто хочет наладить бытовое послушание без жёстких методов</li>
-                        <li class="relative pl-5 text-sm text-[#86868b] leading-relaxed before:content-['•'] before:absolute before:left-0 before:opacity-50">семьям, у которых собака тянет поводок, перевозбуждается или плохо концентрируется</li>
-                        <li class="relative pl-5 text-sm text-[#86868b] leading-relaxed before:content-['•'] before:absolute before:left-0 before:opacity-50">владельцам собак со страхами, тревожностью и сложностями на прогулке</li>
-                        <li class="relative pl-5 text-sm text-[#86868b] leading-relaxed before:content-['•'] before:absolute before:left-0 before:opacity-50">тем, кому нужен очный формат в Москве или поддержка онлайн</li>
+        <!-- Info Cards -->
+        <section class="section bg-white">
+            <div class="container split-section">
+                <div class="service-card fade-in">
+                    <span class="service-tag">Для кого</span>
+                    <h2 class="service-title">Кому подходит помощь</h2>
+                    <p class="service-desc">Кинолог может быть полезен не только тогда, когда ситуация уже стала сложной. Часто люди обращаются раньше — чтобы спокойно пройти щенячий возраст, избежать бытовых ошибок, выстроить понятные правила дома и на прогулке, подготовить собаку к жизни в городе или разобраться, почему привычные советы не работают именно в их случае.</p>
+                    <div class="divider"></div>
+                    <ul class="service-list service-details">
+                        <li>владельцам щенков, которым важно спокойно пройти первые месяцы</li>
+                        <li>тем, кто хочет наладить бытовое послушание без жёстких методов</li>
+                        <li>семьям, у которых собака тянет поводок, перевозбуждается или плохо концентрируется</li>
+                        <li>владельцам собак со страхами, тревожностью и сложностями на прогулке</li>
+                        <li>тем, кому нужен очный формат в Москве или поддержка онлайн</li>
                     </ul>
                 </div>
                 
-                <div class="bg-white border border-[#f5f5f4] rounded-[32px] p-8 shadow-sm flex flex-col h-full transition-transform duration-500 hover:-translate-y-1">
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-[#86868b] mb-6 inline-block">Запросы</span>
-                    <h2 class="font-serif text-3xl md:text-4xl mb-6 font-normal leading-tight">С какими запросами можно обратиться</h2>
-                    <p class="text-[#86868b] text-sm mb-6">На консультацию приходят с очень разными задачами. Иногда это щенок, который кусается, не умеет успокаиваться и тяжело переносит одиночество. Иногда взрослая собака, с которой сложно гулять, трудно жить в городе или непонятно, как выстраивать контакт.</p>
-                    <div class="h-px w-8 bg-current opacity-20 mb-6"></div>
-                    <ul class="list-none p-0 grow space-y-3">
-                        <li class="relative pl-5 text-sm text-[#86868b] leading-relaxed before:content-['•'] before:absolute before:left-0 before:opacity-50">воспитание щенка и первые бытовые навыки</li>
-                        <li class="relative pl-5 text-sm text-[#86868b] leading-relaxed before:content-['•'] before:absolute before:left-0 before:opacity-50">помощь с прогулками и адаптацией к городской среде</li>
-                        <li class="relative pl-5 text-sm text-[#86868b] leading-relaxed before:content-['•'] before:absolute before:left-0 before:opacity-50">коррекция поведения собаки</li>
-                        <li class="relative pl-5 text-sm text-[#86868b] leading-relaxed before:content-['•'] before:absolute before:left-0 before:opacity-50">перевозбуждение, лай, трудности с переключением внимания</li>
-                        <li class="relative pl-5 text-sm text-[#86868b] leading-relaxed before:content-['•'] before:absolute before:left-0 before:opacity-50">базовое послушание и понятные правила дома</li>
-                        <li class="relative pl-5 text-sm text-[#86868b] leading-relaxed before:content-['•'] before:absolute before:left-0 before:opacity-50">подготовка к ОКД / УГС / BH</li>
-                        <li class="relative pl-5 text-sm text-[#86868b] leading-relaxed before:content-['•'] before:absolute before:left-0 before:opacity-50">онлайн-консультация, если очная встреча сейчас неудобна</li>
+                <div class="service-card fade-in" style="transition-delay: 0.1s;">
+                    <span class="service-tag">Запросы</span>
+                    <h2 class="service-title">С какими запросами можно обратиться</h2>
+                    <p class="service-desc">На консультацию приходят с очень разными задачами. Иногда это щенок, который кусается, не умеет успокаиваться и тяжело переносит одиночество. Иногда взрослая собака, с которой сложно гулять, трудно жить в городе или непонятно, как выстраивать контакт.</p>
+                    <div class="divider"></div>
+                    <ul class="service-list service-details">
+                        <li>воспитание щенка и первые бытовые навыки</li>
+                        <li>помощь с прогулками и адаптацией к городской среде</li>
+                        <li>коррекция поведения собаки</li>
+                        <li>перевозбуждение, лай, трудности с переключением внимания</li>
+                        <li>базовое послушание и понятные правила дома</li>
+                        <li>подготовка к ОКД / УГС / BH</li>
+                        <li>онлайн-консультация, если очная встреча сейчас неудобна</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Блок 4. Как проходит работа -->
-        <section class="py-20">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="max-w-3xl mx-auto mb-12 text-center">
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-[#86868b] mb-6 inline-block">Процесс</span>
-                    <h2 class="font-serif text-3xl md:text-4xl mb-6 font-normal leading-tight">Как проходит работа</h2>
-                    <p class="text-[#86868b]">Работа начинается не с набора команд, а с понимания вашей конкретной ситуации. Важно, как собака живёт дома, как проходят прогулки, что уже пробовали делать и что именно сейчас вызывает наибольшее напряжение. На встрече мы разбираем контекст, определяем приоритеты и договариваемся о реалистичном формате работы.</p>
+        <!-- Process Section -->
+        <section class="section">
+            <div class="container">
+                <div style="max-width: 48rem; margin: 0 auto 64px; text-align: center;" class="fade-in">
+                    <span class="section-tag">Процесс</span>
+                    <h2 class="section-title">Как проходит работа</h2>
+                    <p style="color: var(--color-gray); font-weight: 300;">Работа начинается не с набора команд, а с понимания вашей конкретной ситуации. Важно, как собака живёт дома, как проходят прогулки, что уже пробовали делать и что именно сейчас вызывает наибольшее напряжение. На встрече мы разбираем контекст, определяем приоритеты и договариваемся о реалистичном формате работы.</p>
                 </div>
                 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="bg-white border border-[#f5f5f4] rounded-[32px] p-6 shadow-sm flex flex-col h-full transition-transform duration-500 hover:-translate-y-1">
-                        <div class="font-serif text-4xl text-[#1d1d1f] opacity-10 mb-4 leading-none">01</div>
-                        <p class="text-[#86868b] text-sm">вы описываете запрос и текущую ситуацию</p>
+                <div class="experience-grid fade-in" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                    <div class="service-card" style="padding: 24px; border-radius: 24px;">
+                        <div style="font-family: var(--font-serif); font-size: 2.25rem; opacity: 0.1; margin-bottom: 16px;">01</div>
+                        <p style="font-size: 0.875rem; color: var(--color-gray);">вы описываете запрос и текущую ситуацию</p>
                     </div>
-                    <div class="bg-white border border-[#f5f5f4] rounded-[32px] p-6 shadow-sm flex flex-col h-full transition-transform duration-500 hover:-translate-y-1">
-                        <div class="font-serif text-4xl text-[#1d1d1f] opacity-10 mb-4 leading-none">02</div>
-                        <p class="text-[#86868b] text-sm">мы выбираем удобный формат: очно в Москве или онлайн</p>
+                    <div class="service-card" style="padding: 24px; border-radius: 24px;">
+                        <div style="font-family: var(--font-serif); font-size: 2.25rem; opacity: 0.1; margin-bottom: 16px;">02</div>
+                        <p style="font-size: 0.875rem; color: var(--color-gray);">мы выбираем удобный формат: очно в Москве или онлайн</p>
                     </div>
-                    <div class="bg-white border border-[#f5f5f4] rounded-[32px] p-6 shadow-sm flex flex-col h-full transition-transform duration-500 hover:-translate-y-1">
-                        <div class="font-serif text-4xl text-[#1d1d1f] opacity-10 mb-4 leading-none">03</div>
-                        <p class="text-[#86868b] text-sm">на консультации разбираем поведение, быт, прогулки и взаимодействие</p>
+                    <div class="service-card" style="padding: 24px; border-radius: 24px;">
+                        <div style="font-family: var(--font-serif); font-size: 2.25rem; opacity: 0.1; margin-bottom: 16px;">03</div>
+                        <p style="font-size: 0.875rem; color: var(--color-gray);">на консультации разбираем поведение, быт, прогулки и взаимодействие</p>
                     </div>
-                    <div class="bg-white border border-[#f5f5f4] rounded-[32px] p-6 shadow-sm flex flex-col h-full transition-transform duration-500 hover:-translate-y-1">
-                        <div class="font-serif text-4xl text-[#1d1d1f] opacity-10 mb-4 leading-none">04</div>
-                        <p class="text-[#86868b] text-sm">после встречи становится понятнее, с чего начинать и куда двигаться дальше</p>
+                    <div class="service-card" style="padding: 24px; border-radius: 24px;">
+                        <div style="font-family: var(--font-serif); font-size: 2.25rem; opacity: 0.1; margin-bottom: 16px;">04</div>
+                        <p style="font-size: 0.875rem; color: var(--color-gray);">после встречи становится понятнее, с чего начинать и куда двигаться дальше</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Блок 5 и 6. Очно и Онлайн -->
-        <section class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white border border-[#f5f5f4] rounded-[32px] p-8 shadow-sm flex flex-col h-full transition-transform duration-500 hover:-translate-y-1">
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-[#86868b] mb-6 inline-block">В Москве</span>
-                    <h2 class="font-serif text-3xl md:text-4xl mb-6 font-normal leading-tight">Почему очный формат полезен</h2>
-                    <div class="h-px w-8 bg-current opacity-20 mb-6"></div>
-                    <p class="text-[#86868b] text-sm">Очная встреча особенно полезна, когда важно увидеть собаку в привычной среде: дома, на улице, в городской обстановке, рядом с обычными раздражителями. Такой формат помогает точнее заметить детали, которые трудно уловить по переписке или коротким видео. Для многих семей это самый понятный способ начать работу.</p>
+        <!-- Format Section -->
+        <section class="section bg-white">
+            <div class="container split-section">
+                <div class="service-card fade-in">
+                    <span class="service-tag">В Москве</span>
+                    <h2 class="service-title">Почему очный формат полезен</h2>
+                    <div class="divider"></div>
+                    <p class="service-desc">Очная встреча особенно полезна, когда важно увидеть собаку в привычной среде: дома, на улице, в городской обстановке, рядом с обычными раздражителями. Такой формат помогает точнее заметить детали, которые трудно уловить по переписке или коротким видео. Для многих семей это самый понятный способ начать работу.</p>
                 </div>
                 
-                <div class="bg-[#1d1d1f] text-white rounded-[32px] p-8 shadow-sm flex flex-col h-full transition-transform duration-500 hover:-translate-y-1">
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-[#a8a29e] mb-6 inline-block">По всему миру</span>
-                    <h2 class="font-serif text-3xl md:text-4xl mb-6 font-normal leading-tight">Когда подходит онлайн</h2>
-                    <div class="h-px w-8 bg-current opacity-20 mb-6"></div>
-                    <p class="text-[#d6d3d1] text-sm">Онлайн-консультация подходит, если вы находитесь не в Москве, хотите заранее обсудить ситуацию со щенком, нуждаетесь в разборе поведения дома или хотите получить более структурное понимание проблемы перед очной встречей. Это удобный формат, когда важна экспертная опора без привязки к месту.</p>
+                <div class="service-card special fade-in" style="transition-delay: 0.1s;">
+                    <span class="service-tag">По всему миру</span>
+                    <h2 class="service-title">Когда подходит онлайн</h2>
+                    <div class="divider"></div>
+                    <p class="service-desc">Онлайн-консультация подходит, если вы находитесь не в Москве, хотите заранее обсудить ситуацию со щенком, нуждаетесь в разборе поведения дома или хотите получить более структурное понимание проблемы перед очной встречей. Это удобный формат, когда важна экспертная опора без привязки к месту.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Блок 7 и 8. Стоимость и О специалисте -->
-        <section class="py-20">
-            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white border border-[#f5f5f4] rounded-[32px] p-8 shadow-sm flex flex-col h-full transition-transform duration-500 hover:-translate-y-1">
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-[#86868b] mb-6 inline-block">Условия</span>
-                    <h2 class="font-serif text-3xl md:text-4xl mb-6 font-normal leading-tight">Стоимость</h2>
-                    <div class="h-px w-8 bg-current opacity-20 mb-6"></div>
-                    <p class="text-[#86868b] text-sm">Стоимость занятий на сайте указана от 2500 рублей. Точный формат зависит от запроса, длительности и того, подходит ли очная работа или онлайн-консультация. Лучше обсуждать детали после короткого описания вашей ситуации: так понятнее, какой формат действительно будет полезен.</p>
+        <!-- Conditions & Specialist -->
+        <section class="section">
+            <div class="container split-section">
+                <div class="service-card fade-in">
+                    <span class="service-tag">Условия</span>
+                    <h2 class="service-title">Стоимость</h2>
+                    <div class="divider"></div>
+                    <p class="service-desc">Стоимость занятий на сайте указана от 2500 рублей. Точный формат зависит от запроса, длительности и того, подходит ли очная работа или онлайн-консультация. Лучше обсуждать детали после короткого описания вашей ситуации: так понятнее, какой формат действительно будет полезен.</p>
                 </div>
                 
-                <div class="bg-white border border-[#f5f5f4] rounded-[32px] p-8 shadow-sm flex flex-col h-full transition-transform duration-500 hover:-translate-y-1">
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-[#86868b] mb-6 inline-block">О специалисте</span>
-                    <h2 class="font-serif text-3xl md:text-4xl mb-6 font-normal leading-tight">Почему выбирают Асю Окорочкову</h2>
-                    <div class="h-px w-8 bg-current opacity-20 mb-6"></div>
-                    <p class="text-[#86868b] text-sm">В работе важны не только опыт и знания, но и способность видеть живую ситуацию без шаблонов. Ася Окорочкова работает с 2008 года, помогает владельцам щенков и взрослых собак, сочетает внимательный разбор поведения с прикладным подходом к повседневной жизни семьи. Здесь нет обещаний мгновенного результата — есть спокойная совместная работа над тем, чтобы жизнь с собакой стала понятнее и устойчивее.</p>
+                <div class="service-card fade-in" style="transition-delay: 0.1s;">
+                    <span class="service-tag">О специалисте</span>
+                    <h2 class="service-title">Почему выбирают Асю Окорочкову</h2>
+                    <div class="divider"></div>
+                    <p class="service-desc">В работе важны не только опыт и знания, но и способность видеть живую ситуацию без шаблонов. Ася Окорочкова работает с 2008 года, помогает владельцам щенков и взрослых собак, сочетает внимательный разбор поведения с прикладным подходом к повседневной жизни семьи. Здесь нет обещаний мгновенного результата — есть спокойная совместная работа над тем, чтобы жизнь с собакой стала понятнее и устойчивее.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Блок 9. FAQ -->
-        <section class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="max-w-3xl mx-auto">
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-[#86868b] mb-6 inline-block">Частые вопросы</span>
-                    <h2 class="font-serif text-3xl md:text-4xl mb-10 font-normal leading-tight">FAQ</h2>
+        <!-- FAQ Section -->
+        <section class="section bg-white">
+            <div class="container">
+                <div style="max-width: 48rem; margin: 0 auto;">
+                    <span class="section-tag">Частые вопросы</span>
+                    <h2 class="section-title" style="margin-bottom: 40px;">FAQ</h2>
                     
-                    <div class="border-b border-[#f5f5f4] py-6 last:border-b-0">
-                        <h3 class="text-xl mb-3 text-[#1d1d1f] font-serif font-normal">Когда лучше обращаться к кинологу — только если уже есть проблема?</h3>
-                        <p class="text-[#86868b] text-[15px]">Нет. Часто помощь особенно полезна в самом начале, когда дома появился щенок или когда поведение ещё не стало устойчивой проблемой.</p>
+                    <div style="border-bottom: 1px solid var(--color-stone-100); padding: 24px 0;" class="fade-in">
+                        <h3 class="service-title" style="font-size: 1.25rem; margin-bottom: 12px;">Когда лучше обращаться к кинологу — только если уже есть проблема?</h3>
+                        <p style="color: var(--color-gray); font-size: 0.9375rem; line-height: 1.6;">Нет. Часто помощь особенно полезна в самом начале, когда дома появился щенок или когда поведение ещё не стало устойчивой проблемой.</p>
                     </div>
-                    <div class="border-b border-[#f5f5f4] py-6 last:border-b-0">
-                        <h3 class="text-xl mb-3 text-[#1d1d1f] font-serif font-normal">Подходит ли онлайн-формат?</h3>
-                        <p class="text-[#86868b] text-[15px]">Да, если нужно обсудить поведение, получить разбор ситуации и понять дальнейшие шаги без очной встречи.</p>
+                    <div style="border-bottom: 1px solid var(--color-stone-100); padding: 24px 0;" class="fade-in">
+                        <h3 class="service-title" style="font-size: 1.25rem; margin-bottom: 12px;">Подходит ли онлайн-формат?</h3>
+                        <p style="color: var(--color-gray); font-size: 0.9375rem; line-height: 1.6;">Да, если нужно обсудить поведение, получить разбор ситуации и понять дальнейшие шаги без очной встречи.</p>
                     </div>
-                    <div class="border-b border-[#f5f5f4] py-6 last:border-b-0">
-                        <h3 class="text-xl mb-3 text-[#1d1d1f] font-serif font-normal">Можно ли обратиться, если собака уже взрослая?</h3>
-                        <p class="text-[#86868b] text-[15px]">Да. Работа с поведением и бытовыми трудностями актуальна не только для щенков, но и для взрослых собак.</p>
+                    <div style="border-bottom: 1px solid var(--color-stone-100); padding: 24px 0;" class="fade-in">
+                        <h3 class="service-title" style="font-size: 1.25rem; margin-bottom: 12px;">Можно ли обратиться, если собака уже взрослая?</h3>
+                        <p style="color: var(--color-gray); font-size: 0.9375rem; line-height: 1.6;">Да. Работа с поведением и бытовыми трудностями актуальна не только для щенков, но и для взрослых собак.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Блок 10. Финальный CTA -->
-        <section class="py-20">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="bg-[#1d1d1f] text-white rounded-[32px] text-center py-20 px-8 shadow-sm">
-                    <h2 class="font-serif text-3xl md:text-4xl mb-6 font-normal leading-tight max-w-3xl mx-auto">Готовы начать работу?</h2>
-                    <p class="text-[#d6d3d1] max-w-2xl mx-auto mb-10 text-base">Если вам важно не просто «исправить собаку», а разобраться в ситуации и выстроить более понятную жизнь рядом с ней, можно начать с первого обращения. Коротко опишите ваш запрос — и станет ясно, какой формат подойдёт лучше: очная встреча в Москве или онлайн-консультация.</p>
+        <!-- Final CTA -->
+        <section class="section">
+            <div class="container">
+                <div class="service-card special fade-in" style="text-align: center; padding: 80px 32px; border-radius: 48px;">
+                    <h2 class="section-title" style="margin-bottom: 24px; max-width: 48rem; margin-left: auto; margin-right: auto;">Готовы начать работу?</h2>
+                    <p style="color: #d6d3d1; max-width: 40rem; margin: 0 auto 40px; line-height: 1.6;">Если вам важно не просто «исправить собаку», а разобраться в ситуации и выстроить более понятную жизнь рядом с ней, можно начать с первого обращения. Коротко опишите ваш запрос — и станет ясно, какой формат подойдёт лучше: очная встреча в Москве или онлайн-консультация.</p>
                     
-                    <div class="flex gap-4 justify-center flex-wrap">
-                        <a href="https://t.me/AsyaOk888" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-white text-[#1d1d1f] px-7 py-3.5 rounded-full no-underline font-medium text-[15px] transition-all duration-300 hover:opacity-85 hover:scale-[0.98]">Написать в Telegram</a>
-                        <a href="/" class="inline-flex items-center justify-center bg-transparent border border-white/20 text-white px-7 py-3.5 rounded-full no-underline font-medium text-[15px] transition-all duration-300 hover:bg-white/10 hover:scale-[0.98]">Узнать цены на главной</a>
+                    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="cta-btn" style="background-color: white; color: var(--color-black);">Написать в Telegram</a>
+                        <a href="/" class="cta-btn" style="background-color: transparent; border: 1px solid rgba(255,255,255,0.2); box-shadow: none;">Узнать цены на главной</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <site-footer></site-footer>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-nav">
+            <a href="/kinolog-v-moskve">Кинолог в Москве</a>
+            <a href="/kinolog-v-lefortovo">Кинолог в Лефортово</a>
+            <a href="/okd-ugs-bh">ОКД / УГС / BH</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://t.me/AsyaOk888?text=Здравствуйте,%20Ася!%20Я%20с%20вашего%20сайта,%20нужна%20помощь%20с%20собакой." target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');">Telegram</a>
+            <a href="https://max.ru/u/f9LHodD0cOIuUk0wJU63_uVTV3DvLiPDlcaCDqar8aNBHLe8t3W2jpSe8jA" target="_blank" onclick="ym(107145180, 'reachGoal', 'max_click');">MAX</a>
+            <a href="https://vk.com/asyaok" target="_blank" onclick="ym(107145180, 'reachGoal', 'vk_click');">Вконтакте</a>
+        </div>
 
-    <script type="module" src="/assets/js/app.js"></script>
+        <p style="margin-bottom: 5px;">© 2026 Ася Окорочкова. Все права защищены.</p>
+        <p style="margin-bottom: 10px;">Плательщик НПД Окорочкова Анастасия Игоревна, ИНН:&nbsp;772271236536</p>
+        
+        <p class="footer-legal">
+            <a href="policy.html" target="_blank">Политика конфиденциальности</a>
+            <a href="oferta.html" target="_blank">Договор-оферта</a>
+        </p>
+        
+        <p class="footer-info">
+            Все материалы сайта являются объектом авторского права. Запрещается копирование, распространение или любое иное использование информации и объектов без предварительного согласия правообладателя.
+        </p>
+    </footer>
+
+    <div id="cookie-notice" style="display: none; position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(30, 30, 30, 0.95); color: #fff; padding: 15px 20px; text-align: center; z-index: 9999; font-size: 14px; font-family: sans-serif; box-sizing: border-box; flex-direction: column; align-items: center;">
+        <span style="margin-bottom: 10px;">
+            Мы используем файлы cookie и Яндекс Метрику для анализа трафика и улучшения работы сайта. Оставаясь с нами, вы соглашаетесь с 
+            <a href="policy.html" target="_blank" style="color: #fff; text-decoration: underline;">Политикой конфиденциальности</a>.
+        </span>
+        <button onclick="acceptCookies()" style="padding: 8px 20px; background: #fff; color: #000; border: none; border-radius: 9999px; cursor: pointer; font-weight: bold; font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; transition: 0.2s;">Принять</button>
+    </div>
+
+    <!-- JS -->
+    <script src="/js/analytics.js" defer></script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/107145180" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </body>
 </html>

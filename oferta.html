@@ -3,104 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кинолог Ася Окорочкова | Договор-оферта</title>
+    <title>Договор-оферта — Кинолог Ася Окорочкова</title>
+    <meta name="description" content="Публичная оферта на оказание консультационных (кинологических) услуг Окорочковой Анастасии Игоревны.">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/index.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/sections.css">
+    
+    <!-- JS -->
+    <script src="/js/main.js" defer></script>
 </head>
-<body class="bg-white text-[#1d1d1f] font-sans antialiased pt-16">
-    <site-header></site-header>
+<body>
+    <!-- Navigation -->
+    <nav class="glass">
+        <div class="nav-inner">
+            <a href="/" class="logo">
+                Кинолог<br>Ася Окорочкова
+            </a>
 
-    <main class="max-w-3xl mx-auto px-6 py-12 md:py-20">
-        <a href="/" class="inline-block mb-8 text-[#86868b] hover:text-[#1d1d1f] transition-colors text-sm">← На главную</a>
+            <!-- Desktop Menu -->
+            <div class="desktop-menu">
+                <a href="/#philosophy">Философия</a>
+                <a href="/#experience">Опыт</a>
+                <a href="/#reviews">Отзывы</a>
+                <a href="/#services">Услуги</a>
+                <a href="/#podcast">Подкаст</a>
+                <a href="/#personal">Личное</a>
+            </div>
 
-        <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl mb-10 font-normal leading-tight">Договор-оферта на оказание консультационных (кинологических) услуг</h1>
+            <!-- Mobile Contact Button -->
+            <div class="mobile-contact-btn">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-sm">
+                    Связаться
+                </a>
+            </div>
 
-        <div class="prose prose-sm md:prose-base prose-stone max-w-none">
-            <h2 class="font-serif text-2xl mt-10 mb-5 font-normal">1. Общие положения</h2>
-            <p class="mb-4 text-gray-800">1.1. Настоящий документ является публичной офертой в соответствии со ст. 437 Гражданского кодекса РФ и адресован физическим лицам.</p>
-            <p class="mb-4 text-gray-800">1.2. Исполнитель: физическое лицо Окорочкова Анастасия Игоревна, применяющая специальный налоговый режим «Налог на профессиональный доход» (НПД), ИНН 772271236536.</p>
-            <p class="mb-4 text-gray-800">1.3. Акцептом настоящей оферты считается:</p>
-            <ul class="list-disc pl-5 mb-4 text-gray-800 space-y-2">
-                <li>запись на консультацию через мессенджеры/сайт,</li>
-                <li>либо внесение оплаты (полной или частичной).</li>
-            </ul>
-            <p class="mb-4 text-gray-800">С момента акцепта договор считается заключенным.</p>
+            <!-- Desktop Contact Button -->
+            <div class="desktop-contact-btn">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-lg">
+                    Связаться
+                </a>
+            </div>
 
-            <h2 class="font-serif text-2xl mt-10 mb-5 font-normal">2. Предмет договора</h2>
-            <p class="mb-4 text-gray-800">2.1. Исполнитель оказывает консультационные услуги по вопросам воспитания, дрессировки и коррекции поведения собаки.</p>
-            <p class="mb-4 text-gray-800">2.2. Услуги оказываются:</p>
-            <ul class="list-disc pl-5 mb-4 text-gray-800 space-y-2">
-                <li>очно</li>
-                <li>либо дистанционно (онлайн).</li>
-            </ul>
-            <p class="mb-4 text-gray-800">2.3. Услуги носят консультационно-обучающий характер. Исполнитель обучает Заказчика методам взаимодействия с животным.</p>
-            <p class="mb-4 text-gray-800">2.4. Исполнитель не гарантирует достижение конкретного результата в фиксированный срок, поскольку результат зависит от:</p>
-            <ul class="list-disc pl-5 mb-4 text-gray-800 space-y-2">
-                <li>индивидуальных особенностей животного</li>
-                <li>регулярности выполнения рекомендаций</li>
-                <li>условий содержания</li>
-            </ul>
+            <!-- Burger Button -->
+            <button id="menuToggle" class="burger-btn" aria-label="Открыть меню">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
 
-            <h2 class="font-serif text-2xl mt-10 mb-5 font-normal">3. Права и обязанности сторон</h2>
-            <h3 class="font-serif text-xl mt-8 mb-4 font-normal">3.1. Исполнитель обязан:</h3>
-            <ul class="list-disc pl-5 mb-4 text-gray-800 space-y-2">
-                <li>предоставить консультацию надлежащего качества;</li>
-                <li>разъяснить технику выполнения упражнений;</li>
-                <li>использовать гуманные методы работы.</li>
-            </ul>
-            <h3 class="font-serif text-xl mt-8 mb-4 font-normal">3.2. Заказчик обязан:</h3>
-            <ul class="list-disc pl-5 mb-4 text-gray-800 space-y-2">
-                <li>предоставить достоверную информацию о состоянии здоровья и поведении животного;</li>
-                <li>соблюдать рекомендации;</li>
-                <li>обеспечить безопасность во время занятия;</li>
-                <li>предупреждать об отмене не позднее чем за 24 часа.</li>
-            </ul>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+            <a href="/#philosophy" class="mobile-link">Философия</a>
+            <a href="/#experience" class="mobile-link">Опыт</a>
+            <a href="/#reviews" class="mobile-link">Отзывы</a>
+            <a href="/#services" class="mobile-link">Услуги</a>
+            <a href="/#podcast" class="mobile-link">Подкаст</a>
+            <a href="/#personal" class="mobile-link">Личное</a>
+            <div style="margin-top: 24px;">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-lg" style="width: 100%;">
+                    Связаться
+                </a>
+            </div>
+        </div>
+    </nav>
 
-            <h2 class="font-serif text-2xl mt-10 mb-5 font-normal">4. Ответственность сторон</h2>
-            <p class="mb-4 text-gray-800">4.1. В соответствии со ст. 137 и 210 ГК РФ животное является имуществом Заказчика.</p>
-            <p class="mb-4 text-gray-800">4.2. Заказчик несет ответственность за вред, причиненный его животным третьим лицам, если вред не вызван виновными действиями Исполнителя.</p>
-            <p class="mb-4 text-gray-800">4.3. Исполнитель несет ответственность в пределах действующего законодательства РФ.</p>
-            <p class="mb-4 text-gray-800">4.4. Исполнитель не отвечает за отсутствие результата, если Заказчик:</p>
-            <ul class="list-disc pl-5 mb-4 text-gray-800 space-y-2">
-                <li>не выполняет рекомендации;</li>
-                <li>предоставляет недостоверную информацию;</li>
-                <li>нарушает технику безопасности.</li>
-            </ul>
+    <main style="padding-top: 120px; padding-bottom: 80px;">
+        <div class="container" style="max-width: 800px;">
+            <a href="/" style="display: inline-block; margin-bottom: 32px; color: var(--color-gray); font-size: 0.875rem; text-decoration: none;">← На главную</a>
+            
+            <h1 class="section-title" style="text-align: left; margin-bottom: 48px; font-size: 3rem;">Договор-оферта на оказание консультационных услуг</h1>
+            
+            <div class="legal-content" style="color: var(--color-black); line-height: 1.6; font-weight: 300;">
+                <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 40px 0 20px; font-weight: 400;">1. Общие положения</h2>
+                <p style="margin-bottom: 16px;">1.1. Настоящий документ является публичной офертой в соответствии со ст. 437 Гражданского кодекса РФ и адресован физическим лицам.</p>
+                <p style="margin-bottom: 16px;">1.2. Исполнитель: физическое лицо Окорочкова Анастасия Игоревна, применяющая специальный налоговый режим «Налог на профессиональный доход» (НПД), ИНН 772271236536.</p>
+                <p style="margin-bottom: 16px;">1.3. Акцептом настоящей оферты считается:</p>
+                <ul style="list-style: disc; padding-left: 20px; margin-bottom: 16px;">
+                    <li>запись на консультацию через мессенджеры/сайт,</li>
+                    <li>либо внесение оплаты (полной или частичной).</li>
+                </ul>
+                <p style="margin-bottom: 16px;">С момента акцепта договор считается заключенным.</p>
 
-            <h2 class="font-serif text-2xl mt-10 mb-5 font-normal">5. Стоимость услуг и порядок расчетов</h2>
-            <p class="mb-4 text-gray-800">5.1. Стоимость услуг определяется на сайте либо согласовывается индивидуально.</p>
-            <p class="mb-4 text-gray-800">5.2. Оплата производится переводом на счет Исполнителя. Исполнитель направляет чек в соответствии с требованиями НПД.</p>
+                <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 40px 0 20px; font-weight: 400;">2. Предмет договора</h2>
+                <p style="margin-bottom: 16px;">2.1. Исполнитель оказывает консультационные услуги по вопросам воспитания, дрессировки и коррекции поведения собаки.</p>
+                <p style="margin-bottom: 16px;">2.2. Услуги оказываются:</p>
+                <ul style="list-style: disc; padding-left: 20px; margin-bottom: 16px;">
+                    <li>очно</li>
+                    <li>либо дистанционно (онлайн).</li>
+                </ul>
+                <p style="margin-bottom: 16px;">2.3. Услуги носят консультационно-обучающий характер. Исполнитель обучает Заказчика методам взаимодействия с животным.</p>
+                <p style="margin-bottom: 16px;">2.4. Исполнитель не гарантирует достижение конкретного результата в фиксированный срок, поскольку результат зависит от:</p>
+                <ul style="list-style: disc; padding-left: 20px; margin-bottom: 16px;">
+                    <li>индивидуальных особенностей животного</li>
+                    <li>регулярности выполнения рекомендаций</li>
+                    <li>условий содержания</li>
+                </ul>
 
-            <h2 class="font-serif text-2xl mt-10 mb-5 font-normal">6. Отказ от услуги и возврат средств</h2>
-            <p class="mb-4 text-gray-800">6.1. Заказчик вправе отказаться от исполнения договора в любое время в соответствии со ст. 32 Закона РФ «О защите прав потребителей» при условии оплаты фактически оказанных услуг и фактически понесенных расходов Исполнителя.</p>
-            <p class="mb-4 text-gray-800">6.2. При отмене занятия менее чем за 24 часа Исполнитель вправе удержать фактически понесенные расходы и убытки, связанные с резервированием времени.</p>
-            <p class="mb-4 text-gray-800">6.3. Возврат денежных средств осуществляется в течение 10 рабочих дней со дня получения письменного требования Заказчика.</p>
+                <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 40px 0 20px; font-weight: 400;">3. Права и обязанности сторон</h2>
+                <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin: 32px 0 16px; font-weight: 400;">3.1. Исполнитель обязан:</h3>
+                <ul style="list-style: disc; padding-left: 20px; margin-bottom: 16px;">
+                    <li>предоставить консультацию надлежащего качества;</li>
+                    <li>разъяснить технику выполнения упражнений;</li>
+                    <li>использовать гуманные методы работы.</li>
+                </ul>
+                <h3 style="font-family: var(--font-serif); font-size: 1.25rem; margin: 32px 0 16px; font-weight: 400;">3.2. Заказчик обязан:</h3>
+                <ul style="list-style: disc; padding-left: 20px; margin-bottom: 16px;">
+                    <li>предоставить достоверную информацию о состоянии здоровья и поведении животного;</li>
+                    <li>соблюдать рекомендации;</li>
+                    <li>обеспечить безопасность во время занятия;</li>
+                    <li>предупреждать об отмене не позднее чем за 24 часа.</li>
+                </ul>
 
-            <h2 class="font-serif text-2xl mt-10 mb-5 font-normal">7. Форс-мажор</h2>
-            <p class="mb-4 text-gray-800">7.1. Стороны освобождаются от ответственности за неисполнение обязательств вследствие обстоятельств непреодолимой силы.</p>
+                <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 40px 0 20px; font-weight: 400;">4. Ответственность сторон</h2>
+                <p style="margin-bottom: 16px;">4.1. В соответствии со ст. 137 и 210 ГК РФ животное является имуществом Заказчика.</p>
+                <p style="margin-bottom: 16px;">4.2. Заказчик несет ответственность за вред, причиненный его животным третьим лицам, если вред не вызван виновными действиями Исполнителя.</p>
+                <p style="margin-bottom: 16px;">4.3. Исполнитель несет ответственность в пределах действующего законодательства РФ.</p>
+                <p style="margin-bottom: 16px;">4.4. Исполнитель не отвечает за отсутствие результата, если Заказчик:</p>
+                <ul style="list-style: disc; padding-left: 20px; margin-bottom: 16px;">
+                    <li>не выполняет рекомендации;</li>
+                    <li>предоставляет недостоверную информацию;</li>
+                    <li>нарушает технику безопасности.</li>
+                </ul>
 
-            <h2 class="font-serif text-2xl mt-10 mb-5 font-normal">8. Порядок разрешения споров</h2>
-            <p class="mb-4 text-gray-800">8.1. Споры разрешаются в претензионном порядке. Срок ответа на претензию — 10 календарных дней.</p>
-            <p class="mb-4 text-gray-800">8.2. При недостижении соглашения спор подлежит рассмотрению в суде по месту жительства Заказчика в соответствии с действующим законодательством РФ.</p>
+                <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 40px 0 20px; font-weight: 400;">5. Стоимость услуг и порядок расчетов</h2>
+                <p style="margin-bottom: 16px;">5.1. Стоимость услуг определяется на сайте либо согласовывается индивидуально.</p>
+                <p style="margin-bottom: 16px;">5.2. Оплата производится переводом на счет Исполнителя. Исполнитель направляет чек в соответствии с требованиями НПД.</p>
 
-            <h2 class="font-serif text-2xl mt-10 mb-5 font-normal">9. Персональные данные</h2>
-            <p class="mb-4 text-gray-800">9.1. Заказчик, акцептуя оферту, дает согласие на обработку персональных данных в соответствии с ФЗ-152.</p>
-            <p class="mb-4 text-gray-800">9.2. Порядок обработки персональных данных размещен на сайте в разделе «Политика конфиденциальности».</p>
+                <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 40px 0 20px; font-weight: 400;">6. Отказ от услуги и возврат средств</h2>
+                <p style="margin-bottom: 16px;">6.1. Заказчик вправе отказаться от исполнения договора в любое время в соответствии со ст. 32 Закона РФ «О защите прав потребителей» при условии оплаты фактически оказанных услуг и фактически понесенных расходов Исполнителя.</p>
+                <p style="margin-bottom: 16px;">6.2. При отмене занятия менее чем за 24 часа Исполнитель вправе удержать фактически понесенные расходы и убытки, связанные с резервированием времени.</p>
+                <p style="margin-bottom: 16px;">6.3. Возврат денежных средств осуществляется в течение 10 рабочих дней со дня получения письменного требования Заказчика.</p>
 
-            <h2 class="font-serif text-2xl mt-10 mb-5 font-normal">10. Реквизиты Исполнителя</h2>
-            <p class="mb-4 text-gray-800">Окорочкова Анастасия Игоревна<br>
-            ИНН 772271236536<br>
-            Сайт: asyaok.ru<br>
-            Telegram: @AsyaOk888</p>
+                <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 40px 0 20px; font-weight: 400;">7. Форс-мажор</h2>
+                <p style="margin-bottom: 16px;">7.1. Стороны освобождаются от ответственности за неисполнение обязательств вследствие обстоятельств непреодолимой силы.</p>
+
+                <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 40px 0 20px; font-weight: 400;">8. Порядок разрешения споров</h2>
+                <p style="margin-bottom: 16px;">8.1. Споры разрешаются в претензионном порядке. Срок ответа на претензию — 10 календарных дней.</p>
+                <p style="margin-bottom: 16px;">8.2. При недостижении соглашения спор подлежит рассмотрению в суде по месту жительства Заказчика в соответствии с действующим законодательством РФ.</p>
+
+                <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 40px 0 20px; font-weight: 400;">9. Персональные данные</h2>
+                <p style="margin-bottom: 16px;">9.1. Заказчик, акцептуя оферту, дает согласие на обработку персональных данных в соответствии с ФЗ-152.</p>
+                <p style="margin-bottom: 16px;">9.2. Порядок обработки персональных данных размещен на сайте в разделе «Политика конфиденциальности».</p>
+
+                <h2 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 40px 0 20px; font-weight: 400;">10. Реквизиты Исполнителя</h2>
+                <p style="margin-bottom: 16px;">Окорочкова Анастасия Игоревна<br>
+                ИНН 772271236536<br>
+                Сайт: asyaok.ru<br>
+                Telegram: @AsyaOk888</p>
+            </div>
         </div>
     </main>
 
-    <site-footer></site-footer>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-nav">
+            <a href="/kinolog-v-moskve">Кинолог в Москве</a>
+            <a href="/kinolog-v-lefortovo">Кинолог в Лефортово</a>
+            <a href="/okd-ugs-bh">ОКД / УГС / BH</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://t.me/AsyaOk888?text=Здравствуйте,%20Ася!%20Я%20с%20вашего%20сайта,%20нужна%20помощь%20с%20собакой." target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');">Telegram</a>
+            <a href="https://max.ru/u/f9LHodD0cOIuUk0wJU63_uVTV3DvLiPDlcaCDqar8aNBHLe8t3W2jpSe8jA" target="_blank" onclick="ym(107145180, 'reachGoal', 'max_click');">MAX</a>
+            <a href="https://vk.com/asyaok" target="_blank" onclick="ym(107145180, 'reachGoal', 'vk_click');">Вконтакте</a>
+        </div>
 
-    <script type="module" src="/assets/js/app.js"></script>
+        <p style="margin-bottom: 5px;">© 2026 Ася Окорочкова. Все права защищены.</p>
+        <p style="margin-bottom: 10px;">Плательщик НПД Окорочкова Анастасия Игоревна, ИНН:&nbsp;772271236536</p>
+        
+        <p class="footer-legal">
+            <a href="/policy.html" target="_blank">Политика конфиденциальности</a>
+            <a href="/oferta.html" target="_blank">Договор-оферта</a>
+        </p>
+        
+        <p class="footer-info">
+            Все материалы сайта являются объектом авторского права. Запрещается копирование, распространение или любое иное использование информации и объектов без предварительного согласия правообладателя.
+        </p>
+    </footer>
+
+    <div id="cookie-notice" style="display: none; position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(30, 30, 30, 0.95); color: #fff; padding: 15px 20px; text-align: center; z-index: 9999; font-size: 14px; font-family: sans-serif; box-sizing: border-box; flex-direction: column; align-items: center;">
+        <span style="margin-bottom: 10px;">
+            Мы используем файлы cookie и Яндекс Метрику для анализа трафика и улучшения работы сайта. Оставаясь с нами, вы соглашаетесь с 
+            <a href="/policy.html" target="_blank" style="color: #fff; text-decoration: underline;">Политикой конфиденциальности</a>.
+        </span>
+        <button onclick="acceptCookies()" style="padding: 8px 20px; background: #fff; color: #000; border: none; border-radius: 9999px; cursor: pointer; font-weight: bold; font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; transition: 0.2s;">Принять</button>
+    </div>
+
+    <!-- JS -->
+    <script src="/js/analytics.js" defer></script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/107145180" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </body>
 </html>
-
-

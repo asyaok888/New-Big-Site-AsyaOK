@@ -1,10 +1,8 @@
-<!-- /korrekciya-povedeniya-sobaki/index.html -->
 <!DOCTYPE html>
-<html lang="ru" class="scroll-smooth">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Коррекция поведения собаки — спокойная работа с причинами, а не с симптомами</title>
     <meta name="description" content="Коррекция поведения собаки в Москве и онлайн: страхи, тревожность, перевозбуждение, лай, сложности на прогулке и дома.">
     
@@ -12,161 +10,188 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="/src/index.css">
-    <link rel="stylesheet" href="/assets/css/pages/behavior.css">
-
-    <script type="module" src="/assets/js/app.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/sections.css">
+    
+    <!-- JS -->
+    <script src="/js/main.js" defer></script>
 </head>
-<body class="bg-[#fbfbfd] text-[#1d1d1f] antialiased font-sans flex flex-col min-h-screen">
-    <h1 style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">
-        Коррекция поведения собаки
-    </h1>
-    <site-header></site-header>
+<body>
+    <!-- Navigation -->
+    <nav class="glass">
+        <div class="nav-inner">
+            <a href="/" class="logo">
+                Кинолог<br>Ася Окорочкова
+            </a>
 
-    <main class="flex-grow">
+            <!-- Desktop Menu -->
+            <div class="desktop-menu">
+                <a href="/#philosophy">Философия</a>
+                <a href="/#experience">Опыт</a>
+                <a href="/#reviews">Отзывы</a>
+                <a href="/#services">Услуги</a>
+                <a href="/#podcast">Подкаст</a>
+                <a href="/#personal">Личное</a>
+            </div>
+
+            <!-- Mobile Contact Button -->
+            <div class="mobile-contact-btn">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-sm">
+                    Связаться
+                </a>
+            </div>
+
+            <!-- Desktop Contact Button -->
+            <div class="desktop-contact-btn">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-lg">
+                    Связаться
+                </a>
+            </div>
+
+            <!-- Burger Button -->
+            <button id="menuToggle" class="burger-btn" aria-label="Открыть меню">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+            <a href="/#philosophy" class="mobile-link">Философия</a>
+            <a href="/#experience" class="mobile-link">Опыт</a>
+            <a href="/#reviews" class="mobile-link">Отзывы</a>
+            <a href="/#services" class="mobile-link">Услуги</a>
+            <a href="/#podcast" class="mobile-link">Подкаст</a>
+            <a href="/#personal" class="mobile-link">Личное</a>
+            <div style="margin-top: 24px;">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-lg" style="width: 100%;">
+                    Связаться
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 64px;">
         <!-- Hero Section -->
-        <section class="pt-24 pb-16 md:pt-48 md:pb-32 text-center overflow-hidden">
-            <div class="max-w-6xl mx-auto px-6 fade-in">
-                <h2 class="font-serif text-[3.75rem] md:text-[6rem] leading-[1.1] tracking-[-0.025em] mb-8 font-normal">Коррекция поведения</h2>
-                <p class="text-lg md:text-xl text-[#86868b] max-w-2xl mx-auto mb-8 font-light">Я работаю не с “плохой собакой”, а с живой ситуацией, в которой вам и ей стало тяжело.</p>
-                <div class="text-[#86868b] font-light leading-relaxed max-w-2xl mx-auto mb-12">
+        <section class="section">
+            <div class="container fade-in" style="text-align: center;">
+                <h1 class="hero-title" style="font-size: 4rem; margin-bottom: 32px;">Коррекция поведения</h1>
+                <p style="font-size: 1.25rem; color: var(--color-gray); max-width: 42rem; margin: 0 auto 32px; font-weight: 300;">
+                    Я работаю не с “плохой собакой”, а с живой ситуацией, в которой вам и ей стало тяжело.
+                </p>
+                <p style="color: var(--color-gray); font-weight: 300; max-width: 42rem; margin: 0 auto 48px;">
                     Когда дома напряжение, прогулки перестают быть спокойными, а обычные советы больше раздражают, чем помогают, хочется не очередной “метод”, а ясности. В коррекции поведения для меня самое важное — понять, что именно происходит, где проблема, что её поддерживает и как можно сделать жизнь с собакой легче и устойчивее.
-                </div>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="https://t.me/AsyaOk888?text=Здравствуйте,%20Ася!%20Я%20с%20вашего%20сайта,%20нужна%20помощь%20с%20поведением%20собаки." target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="inline-flex items-center justify-center bg-[#1d1d1f] text-white px-10 py-5 md:w-[320px] h-16 rounded-full font-bold text-xs tracking-[0.15em] uppercase transition-opacity hover:opacity-90">
+                </p>
+                <div style="display: flex; justify-content: center;">
+                    <a href="https://t.me/AsyaOk888?text=Здравствуйте,%20Ася!%20Я%20с%20вашего%20сайта,%20нужна%20помощь%20с%20поведением%20собаки." 
+                       target="_blank" 
+                       onclick="ym(107145180, 'reachGoal', 'tg_click');" 
+                       class="cta-btn" style="width: 320px;">
                         Разобрать ситуацию
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- С чем ко мне приходят -->
-        <section class="py-12 md:py-32 bg-white">
-            <div class="max-w-6xl mx-auto px-6 flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+        <!-- Requests Section -->
+        <section class="section bg-white">
+            <div class="container split-section">
                 <div class="fade-in">
-                    <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-[#86868b] block mb-6">Запросы</span>
-                    <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-8 font-normal">С чем ко мне приходят</h2>
-                    <div class="text-[#86868b] font-light leading-relaxed">
-                        Сложное поведение не всегда выглядит драматично со стороны, но внутри семьи часто ощущается очень остро. Люди приходят уставшими, запутавшимися, иногда с чувством вины, иногда уже после множества попыток всё исправить самим.
-                    </div>
+                    <span class="section-tag">Запросы</span>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 32px;">С чем ко мне приходят</h2>
+                    <p style="color: var(--color-gray); font-weight: 300;">Сложное поведение не всегда выглядит драматично со стороны, но внутри семьи часто ощущается очень остро. Люди приходят уставшими, запутавшимися, иногда с чувством вины, иногда уже после множества попыток всё исправить самим.</p>
                 </div>
                 <div class="fade-in">
-                    <ul class="space-y-4 text-[#86868b] font-light">
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>страхи и тревожность</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>перевозбуждение и трудности с саморегуляцией</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>лай дома или на улице</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>тянущий поводок и тяжёлые прогулки</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>резкие реакции на людей или собак</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>беспокойство дома</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>сложное поведение щенка или подростка</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>ощущение, что контакт с собакой потерялся</span>
-                        </li>
+                    <ul class="service-list service-details">
+                        <li>страхи и тревожность</li>
+                        <li>перевозбуждение и трудности с саморегуляцией</li>
+                        <li>лай дома или на улице</li>
+                        <li>тянущий поводок и тяжёлые прогулки</li>
+                        <li>резкие реакции на людей или собак</li>
+                        <li>беспокойство дома</li>
+                        <li>сложное поведение щенка или подростка</li>
+                        <li>ощущение, что контакт с собакой потерялся</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Что я считаю важным -->
-        <section class="py-12 md:py-32 bg-[#fbfbfd]">
-            <div class="max-w-4xl mx-auto px-6 text-center fade-in">
-                <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-[#86868b] block mb-6">Принципы</span>
-                <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-8 font-normal">Что я считаю важным</h2>
-                <div class="text-[#86868b] font-light leading-relaxed text-lg">
+        <!-- Principles Section -->
+        <section class="section">
+            <div class="container fade-in" style="text-align: center; max-width: 42rem;">
+                <span class="section-tag">Принципы</span>
+                <h2 class="section-title">Что я считаю важным</h2>
+                <p style="color: var(--color-gray); font-weight: 300; font-size: 1.125rem;">
                     Я не люблю подход “сделаем быстро и жёстко”. Поведение почти никогда не существует отдельно от среды, нагрузки, ритма жизни и того, как вообще устроена повседневность. Поэтому мне важно не давить на симптом, а разбираться с тем, из чего ситуация складывается. Иногда маленькие, но точные изменения дают больше, чем попытка всё резко “переломить”.
-                </div>
+                </p>
             </div>
         </section>
 
-        <!-- Как проходит работа -->
-        <section class="py-12 md:py-32 bg-white">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start mb-20">
+        <!-- Process Section -->
+        <section class="section bg-white">
+            <div class="container">
+                <div class="split-section" style="margin-bottom: 80px;">
                     <div class="fade-in">
-                        <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-[#86868b] block mb-6">Процесс</span>
-                        <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-8 font-normal">Как проходит работа</h2>
-                        <div class="text-[#86868b] font-light leading-relaxed">
-                            Сначала мы собираем картину. Что происходит дома? Что на прогулке? В какие моменты особенно тяжело? Что уже пробовали? Что срабатывало, а что нет? На этой основе становится понятнее, как работать дальше: спокойно, последовательно и без лишних обещаний.
-                        </div>
+                        <span class="section-tag">Процесс</span>
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 32px;">Как проходит работа</h2>
+                        <p style="color: var(--color-gray); font-weight: 300;">Сначала мы собираем картину. Что происходит дома? Что на прогулке? В какие моменты особенно тяжело? Что уже пробовали? Что срабатывало, а что нет? На этой основе становится понятнее, как работать дальше: спокойно, последовательно и без лишних обещаний.</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div class="fade-in relative pl-8 border-l border-[#e7e5e4]">
-                        <div class="absolute left-[-5px] top-0 w-[9px] h-[9px] rounded-full bg-[#1d1d1f]"></div>
-                        <h4 class="font-serif text-lg mb-3">Описание</h4>
-                        <p class="text-sm text-[#86868b] font-light">Вы коротко описываете ситуацию, которая вас беспокоит.</p>
+                <div class="experience-grid fade-in">
+                    <div class="service-card" style="padding: 32px; border-radius: 24px; border-left: 1px solid var(--color-stone-200);">
+                        <h4 class="service-title" style="font-size: 1.125rem; margin-bottom: 12px;">Описание</h4>
+                        <p style="font-size: 0.875rem; color: var(--color-gray);">Вы коротко описываете ситуацию, которая вас беспокоит.</p>
                     </div>
-                    <div class="fade-in relative pl-8 border-l border-[#e7e5e4]">
-                        <div class="absolute left-[-5px] top-0 w-[9px] h-[9px] rounded-full bg-[#1d1d1f]"></div>
-                        <h4 class="font-serif text-lg mb-3">Формат</h4>
-                        <p class="text-sm text-[#86868b] font-light">Мы выбираем формат: очно в Москве или онлайн-консультация.</p>
+                    <div class="service-card" style="padding: 32px; border-radius: 24px; border-left: 1px solid var(--color-stone-200);">
+                        <h4 class="service-title" style="font-size: 1.125rem; margin-bottom: 12px;">Формат</h4>
+                        <p style="font-size: 0.875rem; color: var(--color-gray);">Мы выбираем формат: очно в Москве или онлайн-консультация.</p>
                     </div>
-                    <div class="fade-in relative pl-8 border-l border-[#e7e5e4]">
-                        <div class="absolute left-[-5px] top-0 w-[9px] h-[9px] rounded-full bg-[#1d1d1f]"></div>
-                        <h4 class="font-serif text-lg mb-3">Контекст</h4>
-                        <p class="text-sm text-[#86868b] font-light">На встрече разбираем контекст, а не только отдельный симптом.</p>
+                    <div class="service-card" style="padding: 32px; border-radius: 24px; border-left: 1px solid var(--color-stone-200);">
+                        <h4 class="service-title" style="font-size: 1.125rem; margin-bottom: 12px;">Контекст</h4>
+                        <p style="font-size: 0.875rem; color: var(--color-gray);">На встрече разбираем контекст, а не только отдельный симптом.</p>
                     </div>
-                    <div class="fade-in relative pl-8 border-l border-[#e7e5e4]">
-                        <div class="absolute left-[-5px] top-0 w-[9px] h-[9px] rounded-full bg-[#1d1d1f]"></div>
-                        <h4 class="font-serif text-lg mb-3">Первый шаг</h4>
-                        <p class="text-sm text-[#86868b] font-light">После этого появляется понятный и выполнимый первый шаг.</p>
+                    <div class="service-card" style="padding: 32px; border-radius: 24px; border-left: 1px solid var(--color-stone-200);">
+                        <h4 class="service-title" style="font-size: 1.125rem; margin-bottom: 12px;">Первый шаг</h4>
+                        <p style="font-size: 0.875rem; color: var(--color-gray);">После этого появляется понятный и выполнимый первый шаг.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Форматы -->
-        <section class="py-12 md:py-32 bg-[#fafaf9]">
-            <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-12 rounded-[40px] shadow-sm fade-in">
-                    <h3 class="font-serif text-2xl mb-6">Когда особенно полезна очная встреча</h3>
-                    <p class="text-[#86868b] font-light leading-relaxed">
+        <!-- Formats Section -->
+        <section class="section bg-stone-50">
+            <div class="container split-section">
+                <div class="service-card fade-in" style="background: white; padding: 48px; border-radius: 40px;">
+                    <h3 class="service-title" style="font-size: 1.5rem; margin-bottom: 24px;">Когда особенно полезна очная встреча</h3>
+                    <p style="color: var(--color-gray); font-weight: 300;">
                         Очный формат нужен тогда, когда важна реальная среда: дом, маршрут, городской шум, привычные раздражители. Иногда одно живое наблюдение даёт больше, чем длинное описание в переписке.
                     </p>
                 </div>
-                <div class="bg-white p-12 rounded-[40px] shadow-sm fade-in">
-                    <h3 class="font-serif text-2xl mb-6">Когда подходит онлайн</h3>
-                    <p class="text-[#86868b] font-light leading-relaxed">
+                <div class="service-card fade-in" style="background: white; padding: 48px; border-radius: 40px;">
+                    <h3 class="service-title" style="font-size: 1.5rem; margin-bottom: 24px;">Когда подходит онлайн</h3>
+                    <p style="color: var(--color-gray); font-weight: 300;">
                         Онлайн хорош, если вы хотите сначала спокойно разобрать общую картину, не живёте в Москве или пока не понимаете, нужен ли очный формат. Это не “слабая версия” помощи, а нормальный способ начать.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Стоимость и Подход -->
-        <section class="py-12 md:py-32 bg-white">
-            <div class="max-w-6xl mx-auto px-6 flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-20">
+        <!-- Pricing & Approach Section -->
+        <section class="section bg-white">
+            <div class="container split-section">
                 <div class="fade-in">
-                    <h2 class="font-serif text-3xl mb-6">Стоимость</h2>
-                    <p class="text-[#86868b] font-light leading-relaxed">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 24px;">Стоимость</h2>
+                    <p style="color: var(--color-gray); font-weight: 300;">
                         Стоимость начинается от 2500 рублей. Я не даю универсальный формат заранее, потому что запросы на поведение почти всегда требуют живого понимания ситуации. Лучше сначала написать мне пару слов о том, что происходит.
                     </p>
                 </div>
                 <div class="fade-in">
-                    <h2 class="font-serif text-3xl mb-6">О моём подходе</h2>
-                    <p class="text-[#86868b] font-light leading-relaxed">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 24px;">О моём подходе</h2>
+                    <p style="color: var(--color-gray); font-weight: 300;">
                         Я работаю с собаками с 2008 года и всё больше ценю не жёсткость, а точность, гибкость и внимание к реальной жизни. Мне важны не красивые обещания, а изменения, которые правда можно встроить в ваш день.
                     </p>
                 </div>
@@ -174,93 +199,93 @@
         </section>
 
         <!-- FAQ Section -->
-        <section id="faq" class="py-12 md:py-32 bg-[#fbfbfd]">
-            <div class="max-w-3xl mx-auto px-6 fade-in">
-                <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-12 font-normal text-center">FAQ</h2>
-                <div class="space-y-8">
-                    <div class="bg-white p-8 rounded-[32px] border border-[#f5f5f4]">
-                        <h3 class="font-serif text-xl mb-4">Можно ли обратиться, если проблема давно тянется?</h3>
-                        <p class="text-[#86868b] font-light">Да. Даже если вы давно живёте в напряжении, разбор всё равно может многое прояснить. Часто именно это и становится первой опорой.</p>
+        <section class="section">
+            <div class="container">
+                <div style="max-width: 48rem; margin: 0 auto;">
+                    <h2 class="section-title" style="margin-bottom: 48px; text-align: center;">FAQ</h2>
+                    <div class="service-card fade-in" style="background: white; padding: 32px; border-radius: 32px; margin-bottom: 24px;">
+                        <h3 class="service-title" style="font-size: 1.25rem; margin-bottom: 16px;">Можно ли обратиться, если проблема давно тянется?</h3>
+                        <p style="color: var(--color-gray); font-weight: 300;">Да. Даже если вы давно живёте в напряжении, разбор всё равно может многое прояснить. Часто именно это и становится первой опорой.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-[32px] border border-[#f5f5f4]">
-                        <h3 class="font-serif text-xl mb-4">Это только для “тяжёлых случаев”?</h3>
-                        <p class="text-[#86868b] font-light">Нет. Иногда человек приходит не с большой проблемой, а с ощущением, что жизнь с собакой стала слишком нервной и непонятной. Это тоже нормальный запрос.</p>
+                    <div class="service-card fade-in" style="background: white; padding: 32px; border-radius: 32px; margin-bottom: 24px;">
+                        <h3 class="service-title" style="font-size: 1.25rem; margin-bottom: 16px;">Это только для “тяжёлых случаев”?</h3>
+                        <p style="color: var(--color-gray); font-weight: 300;">Нет. Иногда человек приходит не с большой проблемой, а с ощущением, что жизнь с собакой стала слишком нервной и непонятной. Это тоже нормальный запрос.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-[32px] border border-[#f5f5f4]">
-                        <h3 class="font-serif text-xl mb-4">Подходит ли онлайн для поведения?</h3>
-                        <p class="text-[#86868b] font-light">Да. Во многих случаях онлайн помогает сначала увидеть общую картину и уже потом решить, нужен ли очный формат.</p>
+                    <div class="service-card fade-in" style="background: white; padding: 32px; border-radius: 32px;">
+                        <h3 class="service-title" style="font-size: 1.25rem; margin-bottom: 16px;">Подходит ли онлайн для поведения?</h3>
+                        <p style="color: var(--color-gray); font-weight: 300;">Да. Во многих случаях онлайн помогает сначала увидеть общую картину и уже потом решить, нужен ли очный формат.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Финальный CTA -->
-        <section class="section bg-white" style="text-align: center; padding-top: 64px; padding-bottom: 64px;">
-            <div class="container fade-in" style="max-width: 42rem;">
-                <h2 class="section-title" style="margin-bottom: 40px; font-size: 3rem;">Начнем разговор?</h2>
-                <p style="color: var(--color-gray); margin-bottom: 40px; font-weight: 300; line-height: 1.625;">
+        <!-- Final CTA -->
+        <section class="section bg-white">
+            <div class="container fade-in" style="text-align: center; max-width: 42rem;">
+                <h2 class="section-title" style="font-size: 3rem; margin-bottom: 32px;">Начнем разговор?</h2>
+                <p style="color: var(--color-gray); font-weight: 300; margin-bottom: 40px;">
                     Если вам тяжело, запутанно или просто уже не хочется жить в постоянном напряжении, напишите мне. Не обязательно сразу знать, что именно делать. Иногда достаточно начать разговор.
                 </p>
-                <div class="cta-container" style="display: flex; flex-direction: column; align-items: center; gap: 24px;">
-                    <a href="https://t.me/AsyaOk888?text=Здравствуйте,%20Ася!%20Я%20с%20вашего%20сайта,%20нужна%20помощь%20с%20поведением%20собаки." target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="cta-btn" style="height: 64px; display: flex; align-items: center; justify-content: center; padding: 0 20px; white-space: nowrap;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
+                    <a href="https://t.me/AsyaOk888?text=Здравствуйте,%20Ася!%20Я%20с%20вашего%20сайта,%20нужна%20помощь%20с%20поведением%20собаки." 
+                       target="_blank" 
+                       onclick="ym(107145180, 'reachGoal', 'tg_click');" 
+                       class="cta-btn" style="width: 100%; max-width: 320px;">
                         Telegram
                     </a>
-                    <a href="https://max.ru/u/f9LHodD0cOIuUk0wJU63_uVTV3DvLiPDlcaCDqar8aNBHLe8t3W2jpSe8jA" target="_blank" onclick="ym(107145180, 'reachGoal', 'max_click');" class="cta-btn" style="height: 64px; display: flex; align-items: center; justify-content: center; padding: 0 20px; white-space: nowrap;">
+                    <a href="https://max.ru/u/f9LHodD0cOIuUk0wJU63_uVTV3DvLiPDlcaCDqar8aNBHLe8t3W2jpSe8jA" 
+                       target="_blank" 
+                       onclick="ym(107145180, 'reachGoal', 'max_click');" 
+                       class="cta-btn" style="width: 100%; max-width: 320px; background: transparent; border: 1px solid var(--color-stone-200); color: var(--color-black); box-shadow: none;">
                         MAX
                     </a>
-                    <a href="https://vk.com/asyaok" target="_blank" onclick="ym(107145180, 'reachGoal', 'vk_click');" class="cta-btn" style="height: 64px; display: flex; align-items: center; justify-content: center; padding: 0 20px; white-space: nowrap;">
+                    <a href="https://vk.com/asyaok" 
+                       target="_blank" 
+                       onclick="ym(107145180, 'reachGoal', 'vk_click');" 
+                       class="cta-btn" style="width: 100%; max-width: 320px; background: transparent; border: 1px solid var(--color-stone-200); color: var(--color-black); box-shadow: none;">
                         Вконтакте
                     </a>
                 </div>
-                <style>
-                    @media (min-width: 768px) {
-                        .cta-btn { width: 320px !important; }
-                        .cta-container { flex-direction: row !important; justify-content: center !important; }
-                    }
-                </style>
             </div>
         </section>
     </main>
 
-    <site-footer></site-footer>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-nav">
+            <a href="/kinolog-v-moskve">Кинолог в Москве</a>
+            <a href="/kinolog-v-lefortovo">Кинолог в Лефортово</a>
+            <a href="/okd-ugs-bh">ОКД / УГС / BH</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://t.me/AsyaOk888?text=Здравствуйте,%20Ася!%20Я%20с%20вашего%20сайта,%20нужна%20помощь%20с%20собакой." target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');">Telegram</a>
+            <a href="https://max.ru/u/f9LHodD0cOIuUk0wJU63_uVTV3DvLiPDlcaCDqar8aNBHLe8t3W2jpSe8jA" target="_blank" onclick="ym(107145180, 'reachGoal', 'max_click');">MAX</a>
+            <a href="https://vk.com/asyaok" target="_blank" onclick="ym(107145180, 'reachGoal', 'vk_click');">Вконтакте</a>
+        </div>
 
-    <style>
-        /* Cookie notice responsive styles */
-        @media (min-width: 640px) {
-            #cookie-notice {
-                flex-direction: row !important;
-                justify-content: center !important;
-            }
-            #cookie-notice span {
-                margin-bottom: 0 !important;
-                margin-right: 15px;
-            }
-        }
-    </style>
+        <p style="margin-bottom: 5px;">© 2026 Ася Окорочкова. Все права защищены.</p>
+        <p style="margin-bottom: 10px;">Плательщик НПД Окорочкова Анастасия Игоревна, ИНН:&nbsp;772271236536</p>
+        
+        <p class="footer-legal">
+            <a href="/policy.html" target="_blank">Политика конфиденциальности</a>
+            <a href="/oferta.html" target="_blank">Договор-оферта</a>
+        </p>
+        
+        <p class="footer-info">
+            Все материалы сайта являются объектом авторского права. Запрещается копирование, распространение или любое иное использование информации и объектов без предварительного согласия правообладателя.
+        </p>
+    </footer>
+
     <div id="cookie-notice" style="display: none; position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(30, 30, 30, 0.95); color: #fff; padding: 15px 20px; text-align: center; z-index: 9999; font-size: 14px; font-family: sans-serif; box-sizing: border-box; flex-direction: column; align-items: center;">
         <span style="margin-bottom: 10px;">
             Мы используем файлы cookie и Яндекс Метрику для анализа трафика и улучшения работы сайта. Оставаясь с нами, вы соглашаетесь с 
-            <a href="policy.html" target="_blank" style="color: #fff; text-decoration: underline;">Политикой конфиденциальности</a>.
+            <a href="/policy.html" target="_blank" style="color: #fff; text-decoration: underline;">Политикой конфиденциальности</a>.
         </span>
         <button onclick="acceptCookies()" style="padding: 8px 20px; background: #fff; color: #000; border: none; border-radius: 9999px; cursor: pointer; font-weight: bold; font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; transition: 0.2s;">Принять</button>
     </div>
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-       (function(m,e,t,r,i,k,a){ m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a) })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107145180', 'ym');
-
-       ym(107145180, 'init', {
-            ssr:true,
-            webvisor:true,
-            clickmap:true,
-            ecommerce:"dataLayer",
-            referrer: document.referrer,
-            url: location.href,
-            accurateTrackBounce:true,
-            trackLinks:true
-       });
-    </script>
+    <!-- JS -->
+    <script src="/js/analytics.js" defer></script>
     <noscript><div><img src="https://mc.yandex.ru/watch/107145180" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
 </body>
 </html>

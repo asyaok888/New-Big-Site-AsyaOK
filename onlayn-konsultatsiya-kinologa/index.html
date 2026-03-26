@@ -1,168 +1,187 @@
-<!-- /onlayn-konsultatsiya-kinologa/index.html -->
 <!DOCTYPE html>
-<html lang="ru" class="scroll-smooth">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Онлайн-консультация кинолога — помощь с собакой из любого города</title>
     <meta name="description" content="Онлайн-консультация кинолога: щенки, поведение, бытовые вопросы, прогулки, тревожность и понятный первый шаг без привязки к городу.">
     
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Онлайн-консультация кинолога — Ася Окорочкова">
-    <meta property="og:description" content="Помощь с собакой из любого города: щенки, поведение, быт.">
-    <meta property="og:url" content="https://asyaok.ru/onlayn-konsultatsiya-kinologa/">
-    <meta property="og:image" content="https://asyaok.ru/images/asya-og-image.jpg">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="/src/index.css">
-    <link rel="stylesheet" href="/assets/css/pages/online.css">
-
-    <script type="module" src="/assets/js/app.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/sections.css">
+    
+    <!-- JS -->
+    <script src="/js/main.js" defer></script>
 </head>
-<body class="bg-[#fbfbfd] text-[#1d1d1f] antialiased font-sans flex flex-col min-h-screen">
-    <h1 style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">
-        Онлайн-консультация кинолога
-    </h1>
-    <site-header></site-header>
+<body>
+    <!-- Navigation -->
+    <nav class="glass">
+        <div class="nav-inner">
+            <a href="/" class="logo">
+                Кинолог<br>Ася Окорочкова
+            </a>
 
-    <main class="flex-grow">
+            <!-- Desktop Menu -->
+            <div class="desktop-menu">
+                <a href="/#philosophy">Философия</a>
+                <a href="/#experience">Опыт</a>
+                <a href="/#reviews">Отзывы</a>
+                <a href="/#services">Услуги</a>
+                <a href="/#podcast">Подкаст</a>
+                <a href="/#personal">Личное</a>
+            </div>
+
+            <!-- Mobile Contact Button -->
+            <div class="mobile-contact-btn">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-sm">
+                    Связаться
+                </a>
+            </div>
+
+            <!-- Desktop Contact Button -->
+            <div class="desktop-contact-btn">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-lg">
+                    Связаться
+                </a>
+            </div>
+
+            <!-- Burger Button -->
+            <button id="menuToggle" class="burger-btn" aria-label="Открыть меню">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+            <a href="/#philosophy" class="mobile-link">Философия</a>
+            <a href="/#experience" class="mobile-link">Опыт</a>
+            <a href="/#reviews" class="mobile-link">Отзывы</a>
+            <a href="/#services" class="mobile-link">Услуги</a>
+            <a href="/#podcast" class="mobile-link">Подкаст</a>
+            <a href="/#personal" class="mobile-link">Личное</a>
+            <div style="margin-top: 24px;">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-lg" style="width: 100%;">
+                    Связаться
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 64px;">
         <!-- Hero Section -->
-        <section class="pt-24 pb-16 md:pt-48 md:pb-32 text-center overflow-hidden">
-            <div class="max-w-6xl mx-auto px-6 fade-in">
-                <h2 class="font-serif text-[3.75rem] md:text-[6rem] leading-[1.1] tracking-[-0.025em] mb-8 font-normal">Онлайн-консультация</h2>
-                <p class="text-lg md:text-xl text-[#86868b] max-w-2xl mx-auto mb-8 font-light">
+        <section class="section">
+            <div class="container fade-in" style="text-align: center;">
+                <h1 class="hero-title" style="font-size: 4rem; margin-bottom: 32px;">Онлайн-консультация</h1>
+                <p style="font-size: 1.25rem; color: var(--color-gray); max-width: 42rem; margin: 0 auto 32px; font-weight: 300;">
                     Если вы не в Москве или просто хотите начать спокойнее, онлайн может быть очень хорошим первым шагом.
                 </p>
-                <div class="text-[#86868b] font-light leading-relaxed max-w-2xl mx-auto mb-12">
+                <p style="color: var(--color-gray); font-weight: 300; max-width: 42rem; margin: 0 auto 48px;">
                     Я отношусь к онлайн-формату как к полноценной работе, а не как к “временной замене”. Во многих ситуациях он помогает спокойно разобрать быт, поведение, первые сложности со щенком или общую картину жизни с собакой — без дороги, спешки и лишней организационной нагрузки.
-                </div>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                </p>
+                <div style="display: flex; justify-content: center;">
                     <a href="https://t.me/AsyaOk888?text=Здравствуйте,%20Ася!%20Я%20с%20вашего%20сайта,%20нужна%20онлайн-консультация." 
                        target="_blank" 
                        onclick="ym(107145180, 'reachGoal', 'tg_click');" 
-                       class="inline-flex items-center justify-center bg-[#1d1d1f] text-white px-10 py-5 md:w-[320px] h-16 rounded-full font-bold text-xs tracking-[0.15em] uppercase transition-opacity hover:opacity-90">
+                       class="cta-btn" style="width: 320px;">
                         Начать онлайн
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Когда онлайн особенно полезен -->
-        <section class="py-12 md:py-32 bg-white">
-            <div class="max-w-6xl mx-auto px-6 flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+        <!-- Application Section -->
+        <section class="section bg-white">
+            <div class="container split-section">
                 <div class="fade-in">
-                    <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-[#86868b] block mb-6">Применение</span>
-                    <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-8 font-normal">Когда онлайн особенно полезен</h2>
-                    <div class="text-[#86868b] font-light leading-relaxed">
-                        Онлайн хорошо подходит, если у вас щенок и хочется с самого начала сделать всё понятнее, если дома много бытовых вопросов, если вы живёте в другом городе или если вам просто важнее сначала спокойно поговорить, а не сразу встречаться очно.
-                    </div>
+                    <span class="section-tag">Применение</span>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 32px;">Когда онлайн особенно полезен</h2>
+                    <p style="color: var(--color-gray); font-weight: 300;">Онлайн хорошо подходит, если у вас щенок и хочется с самого начала сделать всё понятнее, если дома много бытовых вопросов, если вы живёте в другом городе или если вам просто важнее сначала спокойно поговорить, а не сразу встречаться очно.</p>
                 </div>
                 <div class="fade-in">
-                    <ul class="space-y-4 text-[#86868b] font-light">
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>первые недели со щенком</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>быт дома и режим</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>спокойствие, одиночество, перевозбуждение</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>тревожность и общая путаница в ситуации</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>вопросы перед очной встречей</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>помощь, если вы не в Москве</span>
-                        </li>
+                    <ul class="service-list service-details">
+                        <li>первые недели со щенком</li>
+                        <li>быт дома и режим</li>
+                        <li>спокойствие, одиночество, перевозбуждение</li>
+                        <li>тревожность и общая путаница в ситуации</li>
+                        <li>вопросы перед очной встречей</li>
+                        <li>помощь, если вы не в Москве</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Как проходит консультация -->
-        <section class="py-12 md:py-32 bg-[#fbfbfd]">
-            <div class="max-w-6xl mx-auto px-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start mb-20">
+        <!-- Process Section -->
+        <section class="section bg-stone-50">
+            <div class="container">
+                <div class="split-section" style="margin-bottom: 80px;">
                     <div class="fade-in">
-                        <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-[#86868b] block mb-6">Процесс</span>
-                        <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-8 font-normal">Как проходит консультация</h2>
-                        <div class="text-[#86868b] font-light leading-relaxed">
-                            Вы заранее коротко описываете ситуацию, а на самой консультации мы разбираем её целиком. Мне важно не только то, что “не так”, но и как вообще устроен ваш день, что происходит дома, как проходят прогулки, где возникает напряжение и что вы уже пробовали делать. Из этого рождается не набор случайных советов, а более понятная логика.
-                        </div>
+                        <span class="section-tag">Процесс</span>
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 32px;">Как проходит консультация</h2>
+                        <p style="color: var(--color-gray); font-weight: 300;">Вы заранее коротко описываете ситуацию, а на самой консультации мы разбираем её целиком. Мне важно не только то, что “не так”, но и как вообще устроен ваш день, что происходит дома, как проходят прогулки, где возникает напряжение и что вы уже пробовали делать. Из этого рождается не набор случайных советов, а более понятная логика.</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div class="fade-in relative pl-8 border-l border-[#e7e5e4]">
-                        <div class="absolute left-[-5px] top-0 w-[9px] h-[9px] rounded-full bg-[#1d1d1f]"></div>
-                        <h4 class="font-serif text-lg mb-3">Запрос</h4>
-                        <p class="text-sm text-[#86868b] font-light">Вы присылаете краткий запрос о вашей ситуации.</p>
+                <div class="experience-grid fade-in">
+                    <div class="service-card" style="padding: 32px; border-radius: 24px; border-left: 1px solid var(--color-stone-200);">
+                        <h4 class="service-title" style="font-size: 1.125rem; margin-bottom: 12px;">Запрос</h4>
+                        <p style="font-size: 0.875rem; color: var(--color-gray);">Вы присылаете краткий запрос о вашей ситуации.</p>
                     </div>
-                    <div class="fade-in relative pl-8 border-l border-[#e7e5e4]">
-                        <div class="absolute left-[-5px] top-0 w-[9px] h-[9px] rounded-full bg-[#1d1d1f]"></div>
-                        <h4 class="font-serif text-lg mb-3">Время</h4>
-                        <p class="text-sm text-[#86868b] font-light">Мы договариваемся о времени встречи в удобном мессенджере.</p>
+                    <div class="service-card" style="padding: 32px; border-radius: 24px; border-left: 1px solid var(--color-stone-200);">
+                        <h4 class="service-title" style="font-size: 1.125rem; margin-bottom: 12px;">Время</h4>
+                        <p style="font-size: 0.875rem; color: var(--color-gray);">Мы договариваемся о времени встречи в удобном мессенджере.</p>
                     </div>
-                    <div class="fade-in relative pl-8 border-l border-[#e7e5e4]">
-                        <div class="absolute left-[-5px] top-0 w-[9px] h-[9px] rounded-full bg-[#1d1d1f]"></div>
-                        <h4 class="font-serif text-lg mb-3">Разбор</h4>
-                        <p class="text-sm text-[#86868b] font-light">На встрече подробно разбираем ситуацию и контекст.</p>
+                    <div class="service-card" style="padding: 32px; border-radius: 24px; border-left: 1px solid var(--color-stone-200);">
+                        <h4 class="service-title" style="font-size: 1.125rem; margin-bottom: 12px;">Разбор</h4>
+                        <p style="font-size: 0.875rem; color: var(--color-gray);">На встрече подробно разбираем ситуацию и контекст.</p>
                     </div>
-                    <div class="fade-in relative pl-8 border-l border-[#e7e5e4]">
-                        <div class="absolute left-[-5px] top-0 w-[9px] h-[9px] rounded-full bg-[#1d1d1f]"></div>
-                        <h4 class="font-serif text-lg mb-3">Фокус</h4>
-                        <p class="text-sm text-[#86868b] font-light">Выбираем, на чём сосредоточиться в первую очередь.</p>
+                    <div class="service-card" style="padding: 32px; border-radius: 24px; border-left: 1px solid var(--color-stone-200);">
+                        <h4 class="service-title" style="font-size: 1.125rem; margin-bottom: 12px;">Фокус</h4>
+                        <p style="font-size: 0.875rem; color: var(--color-gray);">Выбираем, на чём сосредоточиться в первую очередь.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Что даёт такой формат -->
-        <section class="py-12 md:py-32 bg-white text-center">
-            <div class="max-w-4xl mx-auto px-6 fade-in">
-                <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-[#86868b] block mb-6">Результат</span>
-                <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-8 font-normal">Что даёт такой формат</h2>
-                <div class="text-[#86868b] font-light leading-relaxed text-lg">
+        <!-- Result Section -->
+        <section class="section bg-white">
+            <div class="container fade-in" style="text-align: center; max-width: 42rem;">
+                <span class="section-tag">Результат</span>
+                <h2 class="section-title">Что даёт такой формат</h2>
+                <p style="color: var(--color-gray); font-weight: 300; font-size: 1.125rem;">
                     Чаще всего онлайн убирает ощущение хаоса. Когда человек получает не десять противоречивых советов, а одну понятную линию, становится легче и ему, и собаке. Иногда этого уже достаточно, чтобы сдвинуть ситуацию с места.
-                </div>
+                </p>
             </div>
         </section>
 
-        <!-- Когда всё-таки лучше очно -->
-        <section class="py-12 md:py-32 bg-[#fafaf9]">
-            <div class="max-w-4xl mx-auto px-6 text-center fade-in">
-                <h2 class="font-serif text-3xl mb-8">Когда всё-таки лучше очно</h2>
-                <p class="text-[#86868b] font-light leading-relaxed">
+        <!-- Comparison Section -->
+        <section class="section bg-stone-50">
+            <div class="container fade-in" style="text-align: center; max-width: 42rem;">
+                <h2 class="section-title">Когда всё-таки лучше очно</h2>
+                <p style="color: var(--color-gray); font-weight: 300;">
                     Если важно увидеть собаку в реальной среде, посмотреть на прогулку или на конкретные бытовые моменты вживую, очный формат может быть полезнее. Но очень часто онлайн помогает сначала понять, нужен ли он вообще.
                 </p>
             </div>
         </section>
 
-        <!-- Стоимость и Подход -->
-        <section class="py-12 md:py-32 bg-white">
-            <div class="max-w-6xl mx-auto px-6 flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-20">
+        <!-- Pricing & Approach Section -->
+        <section class="section bg-white">
+            <div class="container split-section">
                 <div class="fade-in">
-                    <h2 class="font-serif text-3xl mb-6">Стоимость</h2>
-                    <p class="text-[#86868b] font-light leading-relaxed">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 24px;">Стоимость</h2>
+                    <p style="color: var(--color-gray); font-weight: 300;">
                         Стоимость начинается от 2500 рублей. Если вы не уверены, подходит ли вам онлайн, просто напишите пару слов о своей ситуации — я скажу честно, есть ли смысл начинать так.
                     </p>
                 </div>
                 <div class="fade-in">
-                    <h2 class="font-serif text-3xl mb-6">О моём подходе</h2>
-                    <p class="text-[#86868b] font-light leading-relaxed">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 24px;">О моём подходе</h2>
+                    <p style="color: var(--color-gray); font-weight: 300;">
                         Мне важно, чтобы даже на расстоянии человек чувствовал не давление, а опору. Я не стараюсь впечатлить сложными схемами. Я стараюсь помочь увидеть, что происходит, и сделать следующий шаг понятным.
                     </p>
                 </div>
@@ -170,102 +189,93 @@
         </section>
 
         <!-- FAQ Section -->
-        <section id="faq" class="py-12 md:py-32 bg-[#fbfbfd]">
-            <div class="max-w-3xl mx-auto px-6 fade-in">
-                <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-12 font-normal text-center">FAQ</h2>
-                <div class="space-y-8">
-                    <div class="bg-white p-8 rounded-[32px] border border-[#f5f5f4]">
-                        <h3 class="font-serif text-xl mb-4">Онлайн подходит только для простых случаев?</h3>
-                        <p class="text-[#86868b] font-light">Нет. Во многих непростых ситуациях онлайн очень полезен именно как первый этап: он помогает собрать картину и понять, как действовать дальше.</p>
+        <section class="section">
+            <div class="container">
+                <div style="max-width: 48rem; margin: 0 auto;">
+                    <h2 class="section-title" style="margin-bottom: 48px; text-align: center;">FAQ</h2>
+                    <div class="service-card fade-in" style="background: white; padding: 32px; border-radius: 32px; margin-bottom: 24px;">
+                        <h3 class="service-title" style="font-size: 1.25rem; margin-bottom: 16px;">Онлайн подходит только для простых случаев?</h3>
+                        <p style="color: var(--color-gray); font-weight: 300;">Нет. Во многих непростых ситуациях онлайн очень полезен именно как первый этап: он помогает собрать картину и понять, как действовать дальше.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-[32px] border border-[#f5f5f4]">
-                        <h3 class="font-serif text-xl mb-4">Можно ли обратиться со щенком?</h3>
-                        <p class="text-[#86868b] font-light">Да. Для щенков онлайн часто бывает одним из самых удобных форматов.</p>
+                    <div class="service-card fade-in" style="background: white; padding: 32px; border-radius: 32px; margin-bottom: 24px;">
+                        <h3 class="service-title" style="font-size: 1.25rem; margin-bottom: 16px;">Можно ли обратиться со щенком?</h3>
+                        <p style="color: var(--color-gray); font-weight: 300;">Да. Для щенков онлайн часто бывает одним из самых удобных форматов.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-[32px] border border-[#f5f5f4]">
-                        <h3 class="font-serif text-xl mb-4">Если потом понадобится очная встреча, это возможно?</h3>
-                        <p class="text-[#86868b] font-light">Да. Онлайн может быть как самостоятельным форматом, так и первым шагом перед очной работой.</p>
+                    <div class="service-card fade-in" style="background: white; padding: 32px; border-radius: 32px;">
+                        <h3 class="service-title" style="font-size: 1.25rem; margin-bottom: 16px;">Если потом понадобится очная встреча, это возможно?</h3>
+                        <p style="color: var(--color-gray); font-weight: 300;">Да. Онлайн может быть как самостоятельным форматом, так и первым шагом перед очной работой.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Финальный CTA -->
-        <section class="section bg-white" style="text-align: center; padding-top: 64px; padding-bottom: 64px;">
-            <div class="container fade-in" style="max-width: 42rem;">
-                <h2 class="section-title" style="margin-bottom: 40px; font-size: 3rem;">Начнем?</h2>
-                <p style="color: var(--color-gray); margin-bottom: 40px; font-weight: 300; line-height: 1.625;">
+        <!-- Final CTA -->
+        <section class="section bg-white">
+            <div class="container fade-in" style="text-align: center; max-width: 42rem;">
+                <h2 class="section-title" style="font-size: 3rem; margin-bottom: 32px;">Начнем?</h2>
+                <p style="color: var(--color-gray); font-weight: 300; margin-bottom: 40px;">
                     Если вам хочется начать спокойно, без дороги и без лишней суеты, онлайн может подойти очень хорошо. Напишите мне, и мы поймём, с чего лучше начать.
                 </p>
-                <div class="cta-container" style="display: flex; flex-direction: column; align-items: center; gap: 24px;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
                     <a href="https://t.me/AsyaOk888?text=Здравствуйте,%20Ася!%20Я%20с%20вашего%20сайта,%20нужна%20онлайн-консультация." 
                        target="_blank" 
                        onclick="ym(107145180, 'reachGoal', 'tg_click');" 
-                       class="cta-btn" style="height: 64px; display: flex; align-items: center; justify-content: center; padding: 0 20px; white-space: nowrap;">
+                       class="cta-btn" style="width: 100%; max-width: 320px;">
                         Telegram
                     </a>
                     <a href="https://max.ru/u/f9LHodD0cOIuUk0wJU63_uVTV3DvLiPDlcaCDqar8aNBHLe8t3W2jpSe8jA" 
                        target="_blank" 
                        onclick="ym(107145180, 'reachGoal', 'max_click');" 
-                       class="cta-btn" style="height: 64px; display: flex; align-items: center; justify-content: center; padding: 0 20px; white-space: nowrap;">
+                       class="cta-btn" style="width: 100%; max-width: 320px; background: transparent; border: 1px solid var(--color-stone-200); color: var(--color-black); box-shadow: none;">
                         MAX
                     </a>
                     <a href="https://vk.com/asyaok" 
                        target="_blank" 
                        onclick="ym(107145180, 'reachGoal', 'vk_click');" 
-                       class="cta-btn" style="height: 64px; display: flex; align-items: center; justify-content: center; padding: 0 20px; white-space: nowrap;">
+                       class="cta-btn" style="width: 100%; max-width: 320px; background: transparent; border: 1px solid var(--color-stone-200); color: var(--color-black); box-shadow: none;">
                         Вконтакте
                     </a>
                 </div>
-                <style>
-                    @media (min-width: 768px) {
-                        .cta-btn { width: 320px !important; }
-                        .cta-container { flex-direction: row !important; justify-content: center !important; }
-                    }
-                </style>
             </div>
         </section>
     </main>
 
-    <site-footer></site-footer>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-nav">
+            <a href="/kinolog-v-moskve">Кинолог в Москве</a>
+            <a href="/kinolog-v-lefortovo">Кинолог в Лефортово</a>
+            <a href="/okd-ugs-bh">ОКД / УГС / BH</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://t.me/AsyaOk888?text=Здравствуйте,%20Ася!%20Я%20с%20вашего%20сайта,%20нужна%20помощь%20с%20собакой." target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');">Telegram</a>
+            <a href="https://max.ru/u/f9LHodD0cOIuUk0wJU63_uVTV3DvLiPDlcaCDqar8aNBHLe8t3W2jpSe8jA" target="_blank" onclick="ym(107145180, 'reachGoal', 'max_click');">MAX</a>
+            <a href="https://vk.com/asyaok" target="_blank" onclick="ym(107145180, 'reachGoal', 'vk_click');">Вконтакте</a>
+        </div>
 
-    <style>
-        /* Cookie notice responsive styles */
-        @media (min-width: 640px) {
-            #cookie-notice {
-                flex-direction: row !important;
-                justify-content: center !important;
-            }
-            #cookie-notice span {
-                margin-bottom: 0 !important;
-                margin-right: 15px;
-            }
-        }
-    </style>
+        <p style="margin-bottom: 5px;">© 2026 Ася Окорочкова. Все права защищены.</p>
+        <p style="margin-bottom: 10px;">Плательщик НПД Окорочкова Анастасия Игоревна, ИНН:&nbsp;772271236536</p>
+        
+        <p class="footer-legal">
+            <a href="/policy.html" target="_blank">Политика конфиденциальности</a>
+            <a href="/oferta.html" target="_blank">Договор-оферта</a>
+        </p>
+        
+        <p class="footer-info">
+            Все материалы сайта являются объектом авторского права. Запрещается копирование, распространение или любое иное использование информации и объектов без предварительного согласия правообладателя.
+        </p>
+    </footer>
+
     <div id="cookie-notice" style="display: none; position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(30, 30, 30, 0.95); color: #fff; padding: 15px 20px; text-align: center; z-index: 9999; font-size: 14px; font-family: sans-serif; box-sizing: border-box; flex-direction: column; align-items: center;">
         <span style="margin-bottom: 10px;">
             Мы используем файлы cookie и Яндекс Метрику для анализа трафика и улучшения работы сайта. Оставаясь с нами, вы соглашаетесь с 
-            <a href="policy.html" target="_blank" style="color: #fff; text-decoration: underline;">Политикой конфиденциальности</a>.
+            <a href="/policy.html" target="_blank" style="color: #fff; text-decoration: underline;">Политикой конфиденциальности</a>.
         </span>
         <button onclick="acceptCookies()" style="padding: 8px 20px; background: #fff; color: #000; border: none; border-radius: 9999px; cursor: pointer; font-weight: bold; font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; transition: 0.2s;">Принять</button>
     </div>
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-       (function(m,e,t,r,i,k,a){ m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a) })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107145180', 'ym');
-
-       ym(107145180, 'init', {
-            ssr:true,
-            webvisor:true,
-            clickmap:true,
-            ecommerce:"dataLayer",
-            referrer: document.referrer,
-            url: location.href,
-            accurateTrackBounce:true,
-            trackLinks:true
-       });
-    </script>
+    <!-- JS -->
+    <script src="/js/analytics.js" defer></script>
     <noscript><div><img src="https://mc.yandex.ru/watch/107145180" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
 </body>
 </html>

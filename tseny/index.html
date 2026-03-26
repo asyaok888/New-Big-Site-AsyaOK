@@ -1,234 +1,253 @@
-<!-- /tseny/index.html -->
 <!DOCTYPE html>
-<html lang="ru" class="scroll-smooth">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Цены на услуги кинолога — Москва и онлайн</title>
     <meta name="description" content="Цены на услуги кинолога: очные занятия в Москве, онлайн-консультации, работа со щенками и поведением собаки.">
     
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Цены на услуги кинолога — Ася Окорочкова">
-    <meta property="og:description" content="Стоимость занятий и консультаций. Помощь в выборе подходящего формата.">
-    <meta property="og:url" content="https://asyaok.ru/tseny/">
-    <meta property="og:image" content="https://asyaok.ru/images/asya-og-image.jpg">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="/src/index.css">
-    <link rel="stylesheet" href="/assets/css/pages/prices.css">
-
-    <script type="module" src="/assets/js/app.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/sections.css">
+    
+    <!-- JS -->
+    <script src="/js/main.js" defer></script>
 </head>
-<body class="bg-[#fbfbfd] text-[#1d1d1f] antialiased font-sans flex flex-col min-h-screen">
-    <h1 style="position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">
-        Цены на услуги кинолога
-    </h1>
-    <site-header></site-header>
+<body>
+    <!-- Navigation -->
+    <nav class="glass">
+        <div class="nav-inner">
+            <a href="/" class="logo">
+                Кинолог<br>Ася Окорочкова
+            </a>
 
-    <main class="flex-grow">
+            <!-- Desktop Menu -->
+            <div class="desktop-menu">
+                <a href="/#philosophy">Философия</a>
+                <a href="/#experience">Опыт</a>
+                <a href="/#reviews">Отзывы</a>
+                <a href="/#services">Услуги</a>
+                <a href="/#podcast">Подкаст</a>
+                <a href="/#personal">Личное</a>
+            </div>
+
+            <!-- Mobile Contact Button -->
+            <div class="mobile-contact-btn">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-sm">
+                    Связаться
+                </a>
+            </div>
+
+            <!-- Desktop Contact Button -->
+            <div class="desktop-contact-btn">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-lg">
+                    Связаться
+                </a>
+            </div>
+
+            <!-- Burger Button -->
+            <button id="menuToggle" class="burger-btn" aria-label="Открыть меню">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+            <a href="/#philosophy" class="mobile-link">Философия</a>
+            <a href="/#experience" class="mobile-link">Опыт</a>
+            <a href="/#reviews" class="mobile-link">Отзывы</a>
+            <a href="/#services" class="mobile-link">Услуги</a>
+            <a href="/#podcast" class="mobile-link">Подкаст</a>
+            <a href="/#personal" class="mobile-link">Личное</a>
+            <div style="margin-top: 24px;">
+                <a href="https://t.me/AsyaOk888" target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');" class="btn-contact btn-contact-lg" style="width: 100%;">
+                    Связаться
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 64px;">
         <!-- Hero Section -->
-        <section class="pt-24 pb-16 md:pt-48 md:pb-32 text-center overflow-hidden">
-            <div class="max-w-6xl mx-auto px-6 fade-in">
-                <h2 class="font-serif text-[3.75rem] md:text-[6rem] leading-[1.1] tracking-[-0.025em] mb-8 font-normal">Цены на услуги</h2>
-                <p class="text-lg md:text-xl text-[#86868b] max-w-2xl mx-auto mb-8 font-light">
+        <section class="section">
+            <div class="container fade-in" style="text-align: center;">
+                <h1 class="hero-title" style="font-size: 4rem; margin-bottom: 32px;">Цены на услуги</h1>
+                <p style="font-size: 1.25rem; color: var(--color-gray); max-width: 42rem; margin: 0 auto 32px; font-weight: 300;">
                     Мне важно, чтобы вы понимали не только стоимость, но и какой формат правда будет полезен именно вам.
                 </p>
-                <div class="text-[#86868b] font-light leading-relaxed max-w-2xl mx-auto mb-12">
+                <p style="color: var(--color-gray); font-weight: 300; max-width: 42rem; margin: 0 auto 48px;">
                     Я не люблю превращать работу с собакой в витрину с абстрактными пакетами. Похожие снаружи запросы внутри могут быть очень разными. Поэтому на этой странице я даю опору по стоимости, но оставляю место для живого выбора формата.
-                </div>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                </p>
+                <div style="display: flex; justify-content: center;">
                     <a href="https://t.me/AsyaOk888?text=Здравствуйте,%20Ася!%20Я%20с%20вашего%20сайта,%20хочу%20уточнить%20формат%20занятий." 
                        target="_blank" 
                        onclick="ym(107145180, 'reachGoal', 'tg_click');" 
-                       class="inline-flex items-center justify-center bg-[#1d1d1f] text-white px-10 py-5 md:w-[320px] h-16 rounded-full font-bold text-xs tracking-[0.15em] uppercase transition-opacity hover:opacity-90">
+                       class="cta-btn" style="width: 320px;">
                         Уточнить формат
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Базовая стоимость -->
-        <section class="py-12 md:py-32 bg-white">
-            <div class="max-w-4xl mx-auto px-6 text-center fade-in">
-                <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-[#86868b] block mb-6">Стоимость</span>
-                <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-8 font-normal">От 2500 рублей</h2>
-                <div class="text-[#86868b] font-light leading-relaxed text-lg">
+        <!-- Base Price Section -->
+        <section class="section bg-white">
+            <div class="container fade-in" style="text-align: center; max-width: 42rem;">
+                <span class="section-tag">Стоимость</span>
+                <h2 class="section-title">От 2500 рублей</h2>
+                <p style="color: var(--color-gray); font-weight: 300; font-size: 1.125rem;">
                     На сайте указана базовая стоимость от 2500 рублей. Дальше всё зависит от того, какой формат нужен: очная встреча, онлайн-консультация, щенок это или взрослая собака, хочется ли просто спокойно начать или нужно разбирать более сложную ситуацию.
-                </div>
+                </p>
             </div>
         </section>
 
-        <!-- Что влияет на формат -->
-        <section class="py-12 md:py-32 bg-[#fbfbfd]">
-            <div class="max-w-6xl mx-auto px-6 flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-20 items-start">
+        <!-- Context Section -->
+        <section class="section bg-stone-50">
+            <div class="container split-section">
                 <div class="fade-in">
-                    <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-[#86868b] block mb-6">Контекст</span>
-                    <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-8 font-normal">Что влияет на формат</h2>
-                    <div class="text-[#86868b] font-light leading-relaxed">
-                        Для меня цена — это не отдельная цифра “в отрыве от жизни”, а часть реальной работы. Мне важно понять, где вы сейчас, что происходит с собакой и какой шаг будет уместен, а не просто продать любой вариант.
-                    </div>
+                    <span class="section-tag">Контекст</span>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 32px;">Что влияет на формат</h2>
+                    <p style="color: var(--color-gray); font-weight: 300;">Для меня цена — это не отдельная цифра “в отрыве от жизни”, а часть реальной работы. Мне важно понять, где вы сейчас, что происходит с собакой и какой шаг будет уместен, а не просто продать любой вариант.</p>
                 </div>
                 <div class="fade-in">
-                    <ul class="space-y-4 text-[#86868b] font-light">
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>щенок это или взрослая собака</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>очный формат в Москве или онлайн</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>бытовой запрос или более сложное поведение</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>нужен первый разбор или дальнейшая работа</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-[#1d1d1f] mt-1">•</span>
-                            <span>важно ли видеть собаку в реальной среде</span>
-                        </li>
+                    <ul class="service-list service-details">
+                        <li>щенок это или взрослая собака</li>
+                        <li>очный формат в Москве или онлайн</li>
+                        <li>бытовой запрос или более сложное поведение</li>
+                        <li>нужен первый разбор или дальнейшая работа</li>
+                        <li>важно ли видеть собаку в реальной среде</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Как я советую выбирать -->
-        <section class="py-12 md:py-32 bg-white">
-            <div class="max-w-4xl mx-auto px-6 text-center fade-in">
-                <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-[#86868b] block mb-6">Совет</span>
-                <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-8 font-normal">Как я советую выбирать</h2>
-                <div class="text-[#86868b] font-light leading-relaxed text-lg">
+        <!-- Advice Section -->
+        <section class="section bg-white">
+            <div class="container fade-in" style="text-align: center; max-width: 42rem;">
+                <span class="section-tag">Совет</span>
+                <h2 class="section-title">Как я советую выбирать</h2>
+                <p style="color: var(--color-gray); font-weight: 300; font-size: 1.125rem;">
                     Если вы не уверены, что именно вам нужно, лучше не гадать. Достаточно коротко описать ситуацию, и уже после этого становится понятнее, с чего лучше начинать. Иногда хватает одной консультации, чтобы разложить всё по полочкам. Иногда полезнее очная встреча. Иногда удобнее спокойно начать онлайн.
-                </div>
+                </p>
             </div>
         </section>
 
-        <!-- Почему здесь нет длинного прайса -->
-        <section class="py-12 md:py-32 bg-[#fafaf9]">
-            <div class="max-w-4xl mx-auto px-6 text-center fade-in">
-                <h2 class="font-serif text-3xl mb-8">Почему здесь нет длинного прайса</h2>
-                <p class="text-[#86868b] font-light leading-relaxed">
+        <!-- Approach Section -->
+        <section class="section bg-stone-50">
+            <div class="container fade-in" style="text-align: center; max-width: 42rem;">
+                <h2 class="section-title">Почему здесь нет длинного прайса</h2>
+                <p style="color: var(--color-gray); font-weight: 300;">
                     Я сознательно не делаю вид, что любую ситуацию можно заранее упаковать в одинаковую услугу. Мне ближе честный подход: сначала понять запрос, потом предложить формат. Так спокойнее и для вас, и для меня.
                 </p>
             </div>
         </section>
 
-        <!-- О моём подходе -->
-        <section class="py-12 md:py-32 bg-white">
-            <div class="max-w-4xl mx-auto px-6 text-center fade-in">
-                <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-[#86868b] block mb-6">Подход</span>
-                <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-8 font-normal">О моём подходе</h2>
-                <div class="text-[#86868b] font-light leading-relaxed text-lg">
+        <!-- Experience Section -->
+        <section class="section bg-white">
+            <div class="container fade-in" style="text-align: center; max-width: 42rem;">
+                <span class="section-tag">Подход</span>
+                <h2 class="section-title">О моём подходе</h2>
+                <p style="color: var(--color-gray); font-weight: 300; font-size: 1.125rem;">
                     Я работаю с собаками с 2008 года и давно поняла, что хорошая помощь начинается не с “прайса ради прайса”, а с точного понимания ситуации. Поэтому здесь для меня важнее честность, чем маркетинговая жёсткость.
-                </div>
+                </p>
             </div>
         </section>
 
         <!-- FAQ Section -->
-        <section id="faq" class="py-12 md:py-32 bg-[#fbfbfd]">
-            <div class="max-w-3xl mx-auto px-6 fade-in">
-                <h2 class="font-serif text-4xl md:text-5xl leading-tight mb-12 font-normal text-center">FAQ</h2>
-                <div class="space-y-8">
-                    <div class="bg-white p-8 rounded-[32px] border border-[#f5f5f4]">
-                        <h3 class="font-serif text-xl mb-4">Это окончательная стоимость?</h3>
-                        <p class="text-[#86868b] font-light">На сайте указана базовая стоимость от 2500 рублей. Конкретный формат лучше уточнять после короткого описания вашей ситуации.</p>
+        <section class="section">
+            <div class="container">
+                <div style="max-width: 48rem; margin: 0 auto;">
+                    <h2 class="section-title" style="margin-bottom: 48px; text-align: center;">FAQ</h2>
+                    <div class="service-card fade-in" style="background: white; padding: 32px; border-radius: 32px; margin-bottom: 24px;">
+                        <h3 class="service-title" style="font-size: 1.25rem; margin-bottom: 16px;">Это окончательная стоимость?</h3>
+                        <p style="color: var(--color-gray); font-weight: 300;">На сайте указана базовая стоимость от 2500 рублей. Конкретный формат лучше уточнять после короткого описания вашей ситуации.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-[32px] border border-[#f5f5f4]">
-                        <h3 class="font-serif text-xl mb-4">Можно ли начать с онлайн-консультации?</h3>
-                        <p class="text-[#86868b] font-light">Да. Во многих случаях это удобный и очень понятный первый шаг.</p>
+                    <div class="service-card fade-in" style="background: white; padding: 32px; border-radius: 32px; margin-bottom: 24px;">
+                        <h3 class="service-title" style="font-size: 1.25rem; margin-bottom: 16px;">Можно ли начать с онлайн-консультации?</h3>
+                        <p style="color: var(--color-gray); font-weight: 300;">Да. Во многих случаях это удобный и очень понятный первый шаг.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-[32px] border border-[#f5f5f4]">
-                        <h3 class="font-serif text-xl mb-4">Вы сразу говорите, какой формат подойдёт?</h3>
-                        <p class="text-[#86868b] font-light">Да. Если вы коротко опишете ситуацию, я помогу сориентироваться, с чего разумнее начинать.</p>
+                    <div class="service-card fade-in" style="background: white; padding: 32px; border-radius: 32px;">
+                        <h3 class="service-title" style="font-size: 1.25rem; margin-bottom: 16px;">Вы сразу говорите, какой формат подойдёт?</h3>
+                        <p style="color: var(--color-gray); font-weight: 300;">Да. Если вы коротко опишете ситуацию, я помогу сориентироваться, с чего разумнее начинать.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Финальный CTA -->
-        <section class="section bg-white" style="text-align: center; padding-top: 64px; padding-bottom: 64px;">
-            <div class="container fade-in" style="max-width: 42rem;">
-                <h2 class="section-title" style="margin-bottom: 40px; font-size: 3rem;">Начнем?</h2>
-                <p style="color: var(--color-gray); margin-bottom: 40px; font-weight: 300; line-height: 1.625;">
+        <!-- Final CTA -->
+        <section class="section bg-white">
+            <div class="container fade-in" style="text-align: center; max-width: 42rem;">
+                <h2 class="section-title" style="font-size: 3rem; margin-bottom: 32px;">Начнем?</h2>
+                <p style="color: var(--color-gray); font-weight: 300; margin-bottom: 40px;">
                     Если вам важна не просто цифра, а ощущение, что вы выбираете подходящий формат без лишней путаницы, напишите мне. Я помогу сориентироваться.
                 </p>
-                <div class="cta-container" style="display: flex; flex-direction: column; align-items: center; gap: 24px;">
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
                     <a href="https://t.me/AsyaOk888?text=Здравствуйте,%20Ася!%20Я%20с%20вашего%20сайта,%20хочу%20уточнить%20стоимость%20и%20формат." 
                        target="_blank" 
                        onclick="ym(107145180, 'reachGoal', 'tg_click');" 
-                       class="cta-btn" style="height: 64px; display: flex; align-items: center; justify-content: center; padding: 0 20px; white-space: nowrap;">
+                       class="cta-btn" style="width: 100%; max-width: 320px;">
                         Telegram
                     </a>
                     <a href="https://max.ru/u/f9LHodD0cOIuUk0wJU63_uVTV3DvLiPDlcaCDqar8aNBHLe8t3W2jpSe8jA" 
                        target="_blank" 
                        onclick="ym(107145180, 'reachGoal', 'max_click');" 
-                       class="cta-btn" style="height: 64px; display: flex; align-items: center; justify-content: center; padding: 0 20px; white-space: nowrap;">
+                       class="cta-btn" style="width: 100%; max-width: 320px; background: transparent; border: 1px solid var(--color-stone-200); color: var(--color-black); box-shadow: none;">
                         MAX
                     </a>
                     <a href="https://vk.com/asyaok" 
                        target="_blank" 
                        onclick="ym(107145180, 'reachGoal', 'vk_click');" 
-                       class="cta-btn" style="height: 64px; display: flex; align-items: center; justify-content: center; padding: 0 20px; white-space: nowrap;">
+                       class="cta-btn" style="width: 100%; max-width: 320px; background: transparent; border: 1px solid var(--color-stone-200); color: var(--color-black); box-shadow: none;">
                         Вконтакте
                     </a>
                 </div>
-                <style>
-                    @media (min-width: 768px) {
-                        .cta-btn { width: 320px !important; }
-                        .cta-container { flex-direction: row !important; justify-content: center !important; }
-                    }
-                </style>
             </div>
         </section>
     </main>
 
-    <site-footer></site-footer>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-nav">
+            <a href="/kinolog-v-moskve">Кинолог в Москве</a>
+            <a href="/kinolog-v-lefortovo">Кинолог в Лефортово</a>
+            <a href="/okd-ugs-bh">ОКД / УГС / BH</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://t.me/AsyaOk888?text=Здравствуйте,%20Ася!%20Я%20с%20вашего%20сайта,%20нужна%20помощь%20с%20собакой." target="_blank" onclick="ym(107145180, 'reachGoal', 'tg_click');">Telegram</a>
+            <a href="https://max.ru/u/f9LHodD0cOIuUk0wJU63_uVTV3DvLiPDlcaCDqar8aNBHLe8t3W2jpSe8jA" target="_blank" onclick="ym(107145180, 'reachGoal', 'max_click');">MAX</a>
+            <a href="https://vk.com/asyaok" target="_blank" onclick="ym(107145180, 'reachGoal', 'vk_click');">Вконтакте</a>
+        </div>
 
-    <style>
-        /* Cookie notice responsive styles */
-        @media (min-width: 640px) {
-            #cookie-notice {
-                flex-direction: row !important;
-                justify-content: center !important;
-            }
-            #cookie-notice span {
-                margin-bottom: 0 !important;
-                margin-right: 15px;
-            }
-        }
-    </style>
+        <p style="margin-bottom: 5px;">© 2026 Ася Окорочкова. Все права защищены.</p>
+        <p style="margin-bottom: 10px;">Плательщик НПД Окорочкова Анастасия Игоревна, ИНН:&nbsp;772271236536</p>
+        
+        <p class="footer-legal">
+            <a href="/policy.html" target="_blank">Политика конфиденциальности</a>
+            <a href="/oferta.html" target="_blank">Договор-оферта</a>
+        </p>
+        
+        <p class="footer-info">
+            Все материалы сайта являются объектом авторского права. Запрещается копирование, распространение или любое иное использование информации и объектов без предварительного согласия правообладателя.
+        </p>
+    </footer>
+
     <div id="cookie-notice" style="display: none; position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(30, 30, 30, 0.95); color: #fff; padding: 15px 20px; text-align: center; z-index: 9999; font-size: 14px; font-family: sans-serif; box-sizing: border-box; flex-direction: column; align-items: center;">
         <span style="margin-bottom: 10px;">
             Мы используем файлы cookie и Яндекс Метрику для анализа трафика и улучшения работы сайта. Оставаясь с нами, вы соглашаетесь с 
-            <a href="policy.html" target="_blank" style="color: #fff; text-decoration: underline;">Политикой конфиденциальности</a>.
+            <a href="/policy.html" target="_blank" style="color: #fff; text-decoration: underline;">Политикой конфиденциальности</a>.
         </span>
         <button onclick="acceptCookies()" style="padding: 8px 20px; background: #fff; color: #000; border: none; border-radius: 9999px; cursor: pointer; font-weight: bold; font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; transition: 0.2s;">Принять</button>
     </div>
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-       (function(m,e,t,r,i,k,a){ m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a) })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107145180', 'ym');
-
-       ym(107145180, 'init', {
-            ssr:true,
-            webvisor:true,
-            clickmap:true,
-            ecommerce:"dataLayer",
-            referrer: document.referrer,
-            url: location.href,
-            accurateTrackBounce:true,
-            trackLinks:true
-       });
-    </script>
+    <!-- JS -->
+    <script src="/js/analytics.js" defer></script>
     <noscript><div><img src="https://mc.yandex.ru/watch/107145180" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
 </body>
 </html>
